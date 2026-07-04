@@ -1,0 +1,15 @@
+{
+  "type": "code",
+  "modid": "allrebalanced",
+  "name": "AllClasses Rebalanced",
+  "description" : "",
+  "authors": ["Eques72"],
+  "version": "1.0.0",
+  "side": "Universal",
+  "requiredonclient": true,
+  "requiredonserver": true,
+  "Dependencies": { 
+	"game": "1.22.3",
+	"allclasses": "5.1.1"
+  }
+}
