@@ -1,2 +1,3 @@
 *.zip
-*.code-workspacecode
+*.code-workspacecodecompare/*
+compare/*

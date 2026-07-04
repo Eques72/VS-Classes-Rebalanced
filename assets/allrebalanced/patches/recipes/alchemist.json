@@ -1,0 +1,451 @@
+[
+    {
+        "op": "addeach",
+        "file": "allclasses/recipes/alchemist.json",
+        "path": "/-",
+        "value": [
+            {
+                "ingredientPattern": "RPK,W__",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "R": {
+                        "type": "item",
+                        "code": "game:rot",
+                        "quantity": 16
+                    },
+                    "P": {
+                        "type": "item",
+                        "code": "game:potash",
+                        "quantity": 2
+                    },
+                    "K": {
+                        "type": "item",
+                        "code": "game:lime",
+                        "quantity": 2
+                    }
+                },
+                "width": 3,
+                "height": 2,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 5
+                    }
+                },
+                "name": "alchemical saltpeter",
+                "output": {
+                    "type": "item",
+                    "code": "game:saltpeter",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "B",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "B": {
+                        "type": "item",
+                        "code": "game:bone",
+                        "quantity": 2
+                    }
+                },
+                "width": 1,
+                "height": 1,
+                "recipeGroup": 1,
+                "name": "alchemical rot from bones",
+                "output": {
+                    "type": "item",
+                    "code": "game:rot",
+                    "quantity": 2
+                }
+            },
+            {
+                "ingredientPattern": "C",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "C": {
+                        "type": "item",
+                        "code": "game:cattailtops",
+                        "quantity": 4
+                    }
+                },
+                "width": 1,
+                "height": 1,
+                "recipeGroup": 1,
+                "name": "alchemical rot from cattails",
+                "output": {
+                    "type": "item",
+                    "code": "game:rot",
+                    "quantity": 1
+                }
+            },
+            {
+                "ingredientPattern": "P",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "P": {
+                        "type": "item",
+                        "code": "game:papyrustops",
+                        "quantity": 4
+                    }
+                },
+                "width": 1,
+                "height": 1,
+                "recipeGroup": 1,
+                "name": "alchemical rot from papyrus",
+                "output": {
+                    "type": "item",
+                    "code": "game:rot",
+                    "quantity": 1
+                }
+            },
+            {
+                "ingredientPattern": "WBL",
+                "recipeGroup": 5,
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:metalbit-silver",
+                        "quantity": 5
+                    },
+                    "L": {
+                        "type": "item",
+                        "code": "game:metalbit-lead",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 2
+                    }
+                },
+                "name": "gold-bits-from-silver-lead",
+                "shapeless": true,
+                "output": {
+                    "type": "item",
+                    "code": "game:metalbit-gold",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "WBM",
+                "recipeGroup": 5,
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:metalbit-electrum",
+                        "quantity": 5
+                    },
+                    "M": {
+                        "type": "item",
+                        "code": "game:metalbit-bismuth",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 2
+                    }
+                },
+                "name": "gold-bits-from-electrum-bismuth",
+                "shapeless": true,
+                "output": {
+                    "type": "item",
+                    "code": "game:metalbit-gold",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "WBZ",
+                "recipeGroup": 5,
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:metalbit-electrum",
+                        "quantity": 5
+                    },
+                    "Z": {
+                        "type": "item",
+                        "code": "game:metalbit-zinc",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 2
+                    }
+                },
+                "name": "silver-bits-from-electrum-zinc",
+                "shapeless": true,
+                "output": {
+                    "type": "item",
+                    "code": "game:metalbit-silver",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "WBS",
+                "recipeGroup": 5,
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:metalbit-gold",
+                        "quantity": 5
+                    },
+                    "S": {
+                        "type": "item",
+                        "code": "game:salt",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 2
+                    }
+                },
+                "name": "silver-bits-from-gold-salt",
+                "shapeless": true,
+                "output": {
+                    "type": "item",
+                    "code": "game:metalbit-silver",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "WBL",
+                "recipeGroup": 5,
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:metalbit-gold",
+                        "quantity": 5
+                    },
+                    "L": {
+                        "type": "item",
+                        "code": "game:metalbit-lead",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 2
+                    }
+                },
+                "name": "electrum-bits-from-gold-lead",
+                "shapeless": true,
+                "output": {
+                    "type": "item",
+                    "code": "game:metalbit-electrum",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "WBS",
+                "recipeGroup": 5,
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "W": {
+                        "type": "block",
+                        "code": "game:woodbucket"
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:metalbit-silver",
+                        "quantity": 5
+                    },
+                    "S": {
+                        "type": "item",
+                        "code": "game:salt",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "attributes": {
+                    "liquidContainerProps": {
+                        "requiresContent": {
+                            "type": "item",
+                            "code": "game:boilingwaterportion"
+                        },
+                        "requiresLitres": 2
+                    }
+                },
+                "name": "electrum-bits-from-silver-salt",
+                "shapeless": true,
+                "output": {
+                    "type": "item",
+                    "code": "game:metalbit-electrum",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "PSB,PS_,PS_",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "P": {
+                        "type": "item",
+                        "code": "game:saltpeter",
+                        "quantity": 2
+                    },
+                    "S": {
+                        "type": "item",
+                        "code": "game:powder-sulfur",
+                        "quantity": 1
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:ore-bituminouscoal",
+                        "quantity": 2
+                    }
+                },
+                "width": 3,
+                "height": 3,
+                "recipeGroup": 2,
+                "shapeless": false,
+                "output": {
+                    "type": "item",
+                    "code": "game:blastingpowder",
+                    "quantity": 14
+                }
+            },
+            {
+                "ingredientPattern": "STS,CPC,_B_",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "T": {
+                        "type": "item",
+                        "code": "game:flaxtwine"
+                    },
+                    "S": {
+                        "type": "block",
+                        "code": "game:metal-scraps",
+                        "quantity": 2
+                    },
+                    "P": {
+                        "type": "item",
+                        "code": "game:powder-iron-oxide",
+                        "quantity": 8
+                    },
+                    "C": {
+                        "type": "item",
+                        "code": "game:clay-*",
+                        "quantity": 2
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:blastingpowder",
+                        "quantity": 4
+                    }
+                },
+                "width": 3,
+                "height": 3,
+                "recipeGroup": 4,
+                "output": {
+                    "type": "block",
+                    "code": "game:bomb-scrap",
+                    "quantity": 12
+                }
+            },
+            {
+                "ingredientPattern": "STS,CPC,_B_",
+                "requiresTrait": "transmutation",
+                "ingredients": {
+                    "T": {
+                        "type": "item",
+                        "code": "game:flaxtwine"
+                    },
+                    "S": {
+                        "type": "item",
+                        "code": "game:metalnailsandstrips-*",
+                        "quantity": 4
+                    },
+                    "P": {
+                        "type": "item",
+                        "code": "game:powder-iron-oxide",
+                        "quantity": 10
+                    },
+                    "C": {
+                        "type": "item",
+                        "code": "game:clay-*",
+                        "quantity": 3
+                    },
+                    "B": {
+                        "type": "item",
+                        "code": "game:blastingpowder",
+                        "quantity": 6
+                    }
+                },
+                "width": 3,
+                "height": 3,
+                "recipeGroup": 5,
+                "output": {
+                    "type": "block",
+                    "code": "game:bomb-scrap",
+                    "quantity": 18
+                }
+            }
+        ]
+    }
+]
