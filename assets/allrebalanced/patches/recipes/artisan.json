@@ -1,0 +1,90 @@
+[
+    {
+        "op": "addeach",
+        "file": "allclasses/recipes/artisan.json",
+        "path": "/-",
+        "value": [
+            {
+                "ingredientPattern": "FFF",
+                "requiresTrait": "clothier",
+                "ingredients": {
+                    "F": {
+                        "type": "item",
+                        "code": "game:flaxfibers"
+                    }
+                },
+                "width": 3,
+                "height": 1,
+                "recipeGroup": 1,
+                "output": {
+                    "type": "item",
+                    "code": "game:flaxtwine",
+                    "quantity": 1
+                }
+            },
+            {
+                "ingredientPattern": "_BS,BSL,SLL",
+                "requiresTrait": "clothier",
+                "ingredients": {
+                    "S": {
+                        "type": "item",
+                        "code": "game:stick",
+                        "quantity": 2
+                    },
+                    "B": {
+                        "type": "block",
+                        "code": "game:supportbeam-*",
+                        "quantity": 2
+                    },
+                    "L": {
+                        "type": "block",
+                        "code": "game:linen-*",
+                        "quantity": 1
+                    }
+                },
+                "width": 3,
+                "height": 3,
+                "recipeGroup": 1,
+                "output": {
+                    "type": "item",
+                    "code": "game:sail",
+                    "quantity": 4
+                }
+            },
+            {
+                "ingredientPattern": "_BP,BPL,PLT",
+                "requiresTrait": "clothier",
+                "ingredients": {
+                    "P": {
+                        "type": "item",
+                        "code": "game:plank-*",
+                        "quantity": 4
+                    },
+                    "B": {
+                        "type": "block",
+                        "code": "game:supportbeam-*",
+                        "quantity": 4
+                    },
+                    "L": {
+                        "type": "block",
+                        "code": "game:linen-*",
+                        "quantity": 3
+                    },
+                    "T": {
+                        "type": "item",
+                        "code": "game:flaxtwine",
+                        "quantity": 4
+                    }
+                },
+                "width": 3,
+                "height": 3,
+                "recipeGroup": 1,
+                "output": {
+                    "type": "item",
+                    "code": "game:sail-large-oak",
+                    "quantity": 4
+                }
+            }
+        ]
+    }
+]
