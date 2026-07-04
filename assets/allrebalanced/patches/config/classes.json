@@ -1,0 +1,196 @@
+[
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "alchemyst",
+        "value": {
+            "traits": [
+                "transmutation",
+                "forager",
+                "fleetfootedall",
+                "fasting",
+                "weak",
+                "farsighted"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "artisan",
+        "value": {
+            "traits": [
+                "artifice",
+                "pilfererall",
+                "rugged",
+                "clothier",
+                "nervousall",
+                "civilall"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "chef",
+        "value": {
+            "traits": [
+                "culinary",
+                "butcher",
+                "cultivator",
+                "forager",
+                "inaccurate",
+                "clumsy"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "homesteader",
+        "value": {
+            "traits": [
+                "pioneer",
+                "farmer",
+                "rugged",
+                "sneaky",
+                "nervous",
+                "petraphobia"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "lumberjack",
+        "value": {
+            "traits": [
+                "carpenter",
+                "lumberjack",
+                "burner",
+                "rugged",
+                "inaccurate",
+                "kind"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "mason",
+        "value": {
+            "traits": [
+                "mason",
+                "defender",
+                "gearhead",
+                "rockhound",
+                "fragile",
+                "heavyfooted"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "merchant",
+        "value": {
+            "traits": [
+                "mercantile",
+                "sneaky",
+                "scavenger",
+                "squeamish",
+                "clumsy"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "miner",
+        "value": {
+            "traits": [
+                "prospector",
+                "miner",
+                "pilferer",
+                "fasting",
+                "exhausted",
+                "unwell"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "mystic",
+        "value": {
+            "traits": [
+                "transcription",
+                "scavenger",
+                "sneaky",
+                "pilfererall",
+                "hungry",
+                "clumsy"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "ranger",
+        "value": {
+            "traits": [
+                "sentry",
+                "sharpeye",
+                "soldierall",
+                "furtiveall",
+                "squeamish",
+                "ravenousall"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "smith",
+        "value": {
+            "traits": [
+                "smith",
+                "defender",
+                "menderall",
+                "burner",
+                "heavyhandedall",
+                "exhausted"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "medic",
+        "value": {
+            "traits": [
+                "stitch_doctor",
+                "surgeon",
+                "fleetfooted",
+                "cultivator",
+                "squeamish",
+                "farsighted"
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/config/characterclasses.json",
+        "path": "tinker",
+        "value": {
+            "traits": [
+                "tinkerer",
+                "technicalall",
+                "gearhead",
+                "sneaky",
+                "civilall",
+                "unwell"
+            ]
+        }
+    }
+]

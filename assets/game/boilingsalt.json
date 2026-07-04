@@ -1,0 +1,42 @@
+[
+{
+  "code": "salt-from-seawater",
+  // "perishableProps": {
+  //   "type": "None",
+  //   "freshHours": {
+  //     "avg": 48
+  //   },
+  //   "transitionHours": {
+  //     "avg": 48
+  //   },
+  //   "transitionRatio": 1,
+  //   "transitionedStack": {
+  //     "type": "item",
+  //     "code": "salt"
+  //   }
+  // },
+  "shape": {
+    "base": "block/food/meal/liquid"
+  },
+  "ingredients": [
+    {
+      "code": "saltwater",
+      "validStacks": [
+        {
+          "type": "item",
+          "code": "saltwaterportion",
+          "shapeElement": "bowl/water"
+        }
+      ],
+      "minQuantity": 4,
+      "maxQuantity": 4,
+      "portionSizeLitres": 1
+    }
+  ],
+  "cooksInto": {
+    "type": "item",
+    "code": "game:salt",
+    "quantity": 1
+  }
+}
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "op": "replace",
+        "path": "/4/traits",
+        "value": [
+            "soldier",
+            "hardy",
+            "merciless",
+            "ravenous",
+            "nearsighted"
+        ],
+        "file": "game:config/characterclasses.json"
+    },
+    {
+        "op": "replace",
+        "path": "/5/traits",
+        "value": [
+            "clothier",
+            "mender",
+            "furtive",
+            "fleetfooted",
+            "civil",
+            "weak"
+        ],
+        "file": "game:config/characterclasses.json"
+    }
+]

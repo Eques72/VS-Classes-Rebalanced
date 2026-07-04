@@ -1,5 +1,5 @@
 {
-  "type": "code",
+  "type": "content",
   "modid": "allrebalanced",
   "name": "AllClasses Rebalanced",
   "description" : "",
@@ -10,6 +10,6 @@
   "requiredonserver": true,
   "Dependencies": { 
 	"game": "1.22.3",
-	"allclasses": "5.1.1"
+	"allclasses": "2.3.0"
   }
 }
