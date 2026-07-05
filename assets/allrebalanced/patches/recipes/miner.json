@@ -1,0 +1,86 @@
+[
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/miner.json",
+        "path": "/5",
+        "value": {
+            "ingredientPattern": "CBC,SPS,_C_",
+            "requiresTrait": "prospector",
+            "ingredients": {
+                "S": {
+                    "type": "item",
+                    "code": "game:powder-sulfur",
+                    "quantity": 2
+                },
+                "P": {
+                    "type": "item",
+                    "code": "game:powder-iron-oxide",
+                    "quantity": 8
+                },
+                "B": {
+                    "type": "item",
+                    "code": "game:blastingpowder",
+                    "quantity": 4
+                },
+                "C": {
+                    "type": "item",
+                    "code": "game:flaxtwine"
+                }
+            },
+            "name": "bomb-stone",
+            "width": 3,
+            "height": 3,
+            "shapeless": true,
+            "output": {
+                "type": "block",
+                "code": "game:bomb-stone",
+                "quantity": 12
+            }
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/miner.json",
+        "path": "/6",
+        "value": {
+            "ingredientPattern": "PSB,RCR",
+            "requiresTrait": "prospector",
+            "ingredients": {
+                "P": {
+                    "type": "item",
+                    "code": "game:saltpeter",
+                    "quantity": 2
+                },
+                "S": {
+                    "type": "item",
+                    "code": "game:powder-sulfur",
+                    "quantity": 2
+                },
+                "B": {
+                    "type": "item",
+                    "code": "game:ore-anthracite",
+                    "quantity": 1
+                },
+                "R": {
+                    "type": "item",
+                    "code": "game:rot",
+                    "quantity": 1
+                },
+                "C": {
+                    "type": "item",
+                    "code": "game:charcoal",
+                    "quantity": 2
+                }
+            },
+            "width": 3,
+            "height": 2,
+            "recipeGroup": 2,
+            "shapeless": false,
+            "output": {
+                "type": "item",
+                "code": "game:blastingpowder",
+                "quantity": 6
+            }
+        }
+    }
+]
