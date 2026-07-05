@@ -1,0 +1,191 @@
+[
+    {
+        "op": "remove",
+        "file": "allclasses/recipes/smith.json",
+        "path": "/7"
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/smith.json",
+        "path": "/8",
+        "value": {
+            "ingredientPattern": "_T_,CPC,_C_",
+            "requiresTrait": "smith",
+            "ingredients": {
+                "T": {
+                    "type": "item",
+                    "code": "game:flaxtwine"
+                },
+                "C": {
+                    "type": "item",
+                    "code": "game:clay-*",
+                    "quantity": 4
+                },
+                "P": {
+                    "type": "item",
+                    "code": "game:blastingpowder",
+                    "quantity": 4
+                }
+            },
+            "width": 3,
+            "height": 3,
+            "recipeGroup": 2,
+            "output": {
+                "type": "block",
+                "code": "game:bomb-ore",
+                "quantity": 8
+            }
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/smith.json",
+        "path": "/9",
+        "value": {
+            "ingredientPattern": "PSB,RC_",
+            "requiresTrait": "smith",
+            "ingredients": {
+                "P": {
+                    "type": "item",
+                    "code": "game:saltpeter",
+                    "quantity": 4
+                },
+                "S": {
+                    "type": "item",
+                    "code": "game:powder-sulfur",
+                    "quantity": 2
+                },
+                "B": {
+                    "type": "item",
+                    "code": "game:ore-bituminouscoal",
+                    "quantity": 1
+                },
+                "R": {
+                    "type": "item",
+                    "code": "game:rot",
+                    "quantity": 4
+                },
+                "C": {
+                    "type": "item",
+                    "code": "game:charcoal",
+                    "quantity": 2
+                }
+            },
+            "width": 3,
+            "height": 2,
+            "recipeGroup": 2,
+            "shapeless": false,
+            "output": {
+                "type": "item",
+                "code": "game:blastingpowder",
+                "quantity": 8
+            }
+        }
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/smithrepair.json",
+        "path": "/12/ingredients/AR/toolDurabilityCost",
+        "value": 45
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/smithrepair.json",
+        "path": "/13/ingredients/AR/toolDurabilityCost",
+        "value": 45
+    },
+    {
+        "op": "replace",
+        "file": "allclasses/recipes/smithrepair.json",
+        "path": "/14/ingredients/AR/toolDurabilityCost",
+        "value": 45
+    },
+    {
+        "op": "addeach",
+        "file": "allclasses/recipes/smithrepair.json",
+        "path": "/-",
+        "value": [
+            {
+                "ingredientPattern": "AR",
+                "requiresTrait": "smith",
+                "ingredients": {
+                    "A": {
+                        "type": "item",
+                        "code": "game:armor-body-antique-*",
+                        "name": "metal"
+                    },
+                    "R": {
+                        "type": "item",
+                        "code": "tools-*",
+                        "isTool": true,
+                        "toolDurabilityCost": 45
+                    }
+                },
+                "width": 2,
+                "height": 1,
+                "recipeGroup": 2,
+                "shapeless": true,
+                "averageDurability": false,
+                "copyAttributesFrom": "A",
+                "output": {
+                    "type": "item",
+                    "code": "game:armor-body-antique-{metal}"
+                }
+            },
+            {
+                "ingredientPattern": "AR",
+                "requiresTrait": "smith",
+                "ingredients": {
+                    "A": {
+                        "type": "item",
+                        "code": "game:armor-legs-antique-*",
+                        "name": "metal"
+                    },
+                    "R": {
+                        "type": "item",
+                        "code": "tools-*",
+                        "isTool": true,
+                        "toolDurabilityCost": 45
+                    }
+                },
+                "width": 2,
+                "height": 1,
+                "recipeGroup": 2,
+                "shapeless": true,
+                "averageDurability": false,
+                "copyAttributesFrom": "A",
+                "output": {
+                    "type": "item",
+                    "code": "game:armor-legs-antique-{metal}"
+                }
+            },
+            {
+                "ingredientPattern": "AR",
+                "requiresTrait": "smith",
+                "ingredients": {
+                    "A": {
+                        "type": "item",
+                        "code": "game:armor-head-antique-*",
+                        "name": "metal"
+                    },
+                    "R": {
+                        "type": "item",
+                        "code": "tools-*",
+                        "isTool": true,
+                        "toolDurabilityCost": 45
+                    }
+                },
+                "width": 2,
+                "height": 1,
+                "recipeGroup": 2,
+                "shapeless": true,
+                "averageDurability": false,
+                "copyAttributesFrom": "A",
+                "output": {
+                    "type": "item",
+                    "code": "game:armor-head-antique-{metal}"
+                }
+            }
+        ]
+    }
+]
