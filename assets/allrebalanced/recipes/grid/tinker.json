@@ -1,0 +1,168 @@
+[
+    {
+        "ingredientPattern": "HCR,BAB,RFR",
+        "requiresTrait": "tinkerer",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "tags": [
+                    "tool-hammer"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 2
+            },
+            "C": {
+                "type": "item",
+                "tags": [
+                    "tool-chisel"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 2
+            },
+            "B": {
+                "type": "item",
+                "code": "game:plank-*",
+                "quantity": 6
+            },
+            "A": {
+                "type": "block",
+                "code": "game:woodenaxle-*",
+                "quantity": 1
+            },
+            "R": {
+                "type": "item",
+                "code": "game:resin",
+                "quantity": 1
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat-rendered",
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "recipeGroup": 2,
+        "output": {
+            "type": "block",
+            "code": "game:woodentoggle-ns",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HCA,SLS,RLF",
+        "requiresTrait": "tinkerer",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "tags": [
+                    "tool-hammer"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 3
+            },
+            "C": {
+                "type": "item",
+                "tags": [
+                    "tool-chisel"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 3
+            },
+            "A": {
+                "type": "item",
+                "tags": [
+                    "tool-saw"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 3
+            },
+            "S": {
+                "type": "item",
+                "code": "game:stick",
+                "quantity": 24
+            },
+            "L": {
+                "type": "block",
+                "code": "game:log-placed-*-ud",
+                "name": "wood",
+                "quantity": 1
+            },
+            "R": {
+                "type": "item",
+                "code": "game:resin",
+                "quantity": 2
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat-rendered",
+                "quantity": 2
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "recipeGroup": 2,
+        "output": {
+            "type": "block",
+            "code": "game:spurgear-s",
+            "quantity": 3
+        }
+    },
+    {
+        "ingredientPattern": "HCA,GPG,R_F",
+        "requiresTrait": "tinkerer",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "tags": [
+                    "tool-hammer"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 2
+            },
+            "C": {
+                "type": "item",
+                "tags": [
+                    "tool-chisel"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 2
+            },
+            "A": {
+                "type": "item",
+                "tags": [
+                    "tool-saw"
+                ],
+                "isTool": true,
+                "toolDurabilityCost": 2
+            },
+            "P": {
+                "type": "item",
+                "code": "game:plank-*",
+                "quantity": 16
+            },
+            "G": {
+                "type": "block",
+                "code": "game:angledgears-s",
+                "quantity": 2
+            },
+            "R": {
+                "type": "item",
+                "code": "game:resin",
+                "quantity": 3
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat-rendered"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "recipeGroup": 2,
+        "output": {
+            "type": "block",
+            "code": "game:transmission-ns",
+            "quantity": 2
+        }
+    }
+]

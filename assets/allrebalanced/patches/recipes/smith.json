@@ -1,43 +1,5 @@
 [
     {
-        "op": "remove",
-        "file": "allclasses:recipes/grid/smith.json",
-        "path": "/7"
-    },
-    {
-        "op": "replace",
-        "file": "allclasses:recipes/grid/smith.json",
-        "path": "/8",
-        "value": {
-            "ingredientPattern": "_T_,CPC,_C_",
-            "requiresTrait": "smith",
-            "ingredients": {
-                "T": {
-                    "type": "item",
-                    "code": "game:flaxtwine"
-                },
-                "C": {
-                    "type": "item",
-                    "code": "game:clay-*",
-                    "quantity": 4
-                },
-                "P": {
-                    "type": "item",
-                    "code": "game:blastingpowder",
-                    "quantity": 4
-                }
-            },
-            "width": 3,
-            "height": 3,
-            "recipeGroup": 2,
-            "output": {
-                "type": "block",
-                "code": "game:bomb-ore",
-                "quantity": 8
-            }
-        }
-    },
-    {
         "op": "replace",
         "file": "allclasses:recipes/grid/smith.json",
         "path": "/9",
@@ -83,6 +45,12 @@
         }
     },
     {
+        "op": "remove",
+        "file": "allclasses:recipes/grid/smith.json",
+        "path": "/7"
+    },
+    //repairs
+    {
         "op": "replace",
         "file": "allclasses:recipes/grid/smithrepair.json",
         "path": "/12/ingredients/R/toolDurabilityCost",
@@ -99,93 +67,5 @@
         "file": "allclasses:recipes/grid/smithrepair.json",
         "path": "/14/ingredients/R/toolDurabilityCost",
         "value": 45
-    },
-    {
-        "op": "addeach",
-        "file": "allclasses:recipes/grid/smithrepair.json",
-        "path": "/-",
-        "value": [
-            {
-                "ingredientPattern": "AR",
-                "requiresTrait": "smith",
-                "ingredients": {
-                    "A": {
-                        "type": "item",
-                        "code": "game:armor-body-antique-*",
-                        "name": "metal"
-                    },
-                    "R": {
-                        "type": "item",
-                        "code": "tools-*",
-                        "isTool": true,
-                        "toolDurabilityCost": 45
-                    }
-                },
-                "width": 2,
-                "height": 1,
-                "recipeGroup": 2,
-                "shapeless": true,
-                "averageDurability": false,
-                "copyAttributesFrom": "A",
-                "output": {
-                    "type": "item",
-                    "code": "game:armor-body-antique-{metal}"
-                }
-            },
-            {
-                "ingredientPattern": "AR",
-                "requiresTrait": "smith",
-                "ingredients": {
-                    "A": {
-                        "type": "item",
-                        "code": "game:armor-legs-antique-*",
-                        "name": "metal"
-                    },
-                    "R": {
-                        "type": "item",
-                        "code": "tools-*",
-                        "isTool": true,
-                        "toolDurabilityCost": 45
-                    }
-                },
-                "width": 2,
-                "height": 1,
-                "recipeGroup": 2,
-                "shapeless": true,
-                "averageDurability": false,
-                "copyAttributesFrom": "A",
-                "output": {
-                    "type": "item",
-                    "code": "game:armor-legs-antique-{metal}"
-                }
-            },
-            {
-                "ingredientPattern": "AR",
-                "requiresTrait": "smith",
-                "ingredients": {
-                    "A": {
-                        "type": "item",
-                        "code": "game:armor-head-antique-*",
-                        "name": "metal"
-                    },
-                    "R": {
-                        "type": "item",
-                        "code": "tools-*",
-                        "isTool": true,
-                        "toolDurabilityCost": 45
-                    }
-                },
-                "width": 2,
-                "height": 1,
-                "recipeGroup": 2,
-                "shapeless": true,
-                "averageDurability": false,
-                "copyAttributesFrom": "A",
-                "output": {
-                    "type": "item",
-                    "code": "game:armor-head-antique-{metal}"
-                }
-            }
-        ]
     }
 ]
