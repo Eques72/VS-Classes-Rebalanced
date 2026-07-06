@@ -1,12 +1,12 @@
 [
     {
         "op": "remove",
-        "file": "allclasses/recipes/smith.json",
+        "file": "allclasses:recipes/grid/smith.json",
         "path": "/7"
     },
     {
         "op": "replace",
-        "file": "allclasses/recipes/smith.json",
+        "file": "allclasses:recipes/grid/smith.json",
         "path": "/8",
         "value": {
             "ingredientPattern": "_T_,CPC,_C_",
@@ -39,7 +39,7 @@
     },
     {
         "op": "replace",
-        "file": "allclasses/recipes/smith.json",
+        "file": "allclasses:recipes/grid/smith.json",
         "path": "/9",
         "value": {
             "ingredientPattern": "PSB,RC_",
@@ -84,25 +84,25 @@
     },
     {
         "op": "replace",
-        "file": "allclasses/recipes/smithrepair.json",
-        "path": "/12/ingredients/AR/toolDurabilityCost",
+        "file": "allclasses:recipes/grid/smithrepair.json",
+        "path": "/12/ingredients/R/toolDurabilityCost",
         "value": 45
     },
     {
         "op": "replace",
-        "file": "allclasses/recipes/smithrepair.json",
-        "path": "/13/ingredients/AR/toolDurabilityCost",
+        "file": "allclasses:recipes/grid/smithrepair.json",
+        "path": "/13/ingredients/R/toolDurabilityCost",
         "value": 45
     },
     {
         "op": "replace",
-        "file": "allclasses/recipes/smithrepair.json",
-        "path": "/14/ingredients/AR/toolDurabilityCost",
+        "file": "allclasses:recipes/grid/smithrepair.json",
+        "path": "/14/ingredients/R/toolDurabilityCost",
         "value": 45
     },
     {
         "op": "addeach",
-        "file": "allclasses/recipes/smithrepair.json",
+        "file": "allclasses:recipes/grid/smithrepair.json",
         "path": "/-",
         "value": [
             {

@@ -1,8 +1,8 @@
 [
     {
         "op": "addmerge",
-        "file": "allclasses/lang/en.json",
-        "path": "/-",
+        "file": "allclasses:lang/en.json",
+        "path": "/",
         "value": {
             "game:trait-soldierall": "<font color=\"#84ff84\">• Soldier</font>",
             "game:trait-ravenousall": "<font color=\"#ff8484\">• Ravenous</font>",

@@ -1,7 +1,7 @@
 [
     {
         "op": "addeach",
-        "file": "allclasses/recipes/artisan.json",
+        "file": "allclasses:recipes/grid/artisan.json",
         "path": "/-",
         "value": [
             {

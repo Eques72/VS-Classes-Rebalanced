@@ -2,278 +2,228 @@
     //Positive
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "sharpeye",
+        "file": "allclasses:config/traits.json",
+        "path": "/15/attributes", //sharpeye"
         "value": {
-            "attributes": {
-                "rangedWeaponsDamage": 0.1,
-                "bowDrawingStrength": 0.1,
-                "rangedWeaponsSpeed": 0.1,
-                "rangedWeaponsAcc": 0.1
-            }
+            "rangedWeaponsDamage": 0.1,
+            "bowDrawingStrength": 0.1,
+            "rangedWeaponsSpeed": 0.1,
+            "rangedWeaponsAcc": 0.1
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "soldierall",
+        "file": "allclasses:config/traits.json",
+        "path": "/20/attributes", //soldierall"
         "value": {
-            "attributes": {
-                "meleeWeaponsDamage": 0.1
-            }
+            "meleeWeaponsDamage": 0.1
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "defender",
+        "file": "allclasses:config/traits.json",
+        "path": "/21/attributes", //defender"
         "value": {
-            "attributes": {
-                "meleeWeaponsDamage": 0.1,
-                "armorWalkSpeedAffectedness": -0.1
-            }
+            "meleeWeaponsDamage": 0.1,
+            "armorWalkSpeedAffectedness": -0.1
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "butcher",
+        "file": "allclasses:config/traits.json",
+        "path": "/27/attributes", //butcher"
         "value": {
-            "attributes": {
-                "animalLootDropRate": 0.2,
-                "animalHarvestingTime": 0.25
-            }
+            "animalLootDropRate": 0.2,
+            "animalHarvestingTime": 0.25
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "pilfererall",
+        "file": "allclasses:config/traits.json",
+        "path": "/33/attributes", //pilfererall"
         "value": {
-            "attributes": {
-                "vesselContentsDropRate": 0.25,
-                "rustyGearDropRate": 1.5,
-                "wholeVesselLootChance": 0.25
-            }
+            "vesselContentsDropRate": 0.25,
+            "rustyGearDropRate": 1.5,
+            "wholeVesselLootChance": 0.25
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "gearhead",
+        "file": "allclasses:config/traits.json",
+        "path": "/34/attributes", //gearhead"
         "value": {
-            "attributes": {
-                "rustyGearDropRate": 1.25,
-                "temporalGearDropRate": 1.5
-            }
+            "rustyGearDropRate": 1.25,
+            "temporalGearDropRate": 1.5
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "furtiveall",
+        "file": "allclasses:config/traits.json",
+        "path": "/36/attributes", //furtiveall"
         "value": {
-            "attributes": {
-                "animalSeekingRange": -0.2
-            }
+            "animalSeekingRange": -0.2
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "sneaky",
+        "file": "allclasses:config/traits.json",
+        "path": "/37/attributes", //sneaky"
         "value": {
-            "attributes": {
-                "animalSeekingRange": -0.4,
-                "walkspeed": 0.05
-            }
+            "animalSeekingRange": -0.4,
+            "walkspeed": 0.05
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "miner",
+        "file": "allclasses:config/traits.json",
+        "path": "/39/attributes", //miner"
         "value": {
-            "attributes": {
-                "oreDropRate": 0.25,
-                "miningSpeedMul": 0.5
-            }
+            "oreDropRate": 0.25,
+            "miningSpeedMul": 0.5
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "rockhound",
+        "file": "allclasses:config/traits.json",
+        "path": "/40/attributes", //rockhound"
         "value": {
-            "attributes": {
-                "oreDropRate": 0.15,
-                "miningSpeedMul": 0.25
-            }
+            "oreDropRate": 0.15,
+            "miningSpeedMul": 0.25
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "rugged",
+        "file": "allclasses:config/traits.json",
+        "path": "/44/attributes", //rugged"
         "value": {
-            "attributes": {
-                "maxhealthExtraPoints": 2.5
-            }
+            "maxhealthExtraPoints": 2.5
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "fasting",
+        "file": "allclasses:config/traits.json",
+        "path": "/47/attributes", //fasting"
         "value": {
-            "attributes": {
-                "hungerrate": -0.15
-            }
+            "hungerrate": -0.15
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "technicalall",
+        "file": "allclasses:config/traits.json",
+        "path": "/51/attributes", //technicalall
         "value": {
-            "attributes": {
-                "temporalGearTLRepairCost": -1,
-                "mechanicalsDamage": 0.3
-            }
+            "temporalGearTLRepairCost": -1,
+            "mechanicalsDamage": 0.3
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "lumberjack",
+        "file": "allclasses:config/traits.json",
+        "path": "/53/attributes", //lumberjack
         "value": {
-            "attributes": {
-                "woodDropRate": 0.1,
-                "fruittreeDropRate": 0.5,
-                "treeseedDropRate": 1,
-                "stickDropRate": 0.25
-            }
+            "woodDropRate": 0.1,
+            "fruittreeDropRate": 0.5,
+            "treeseedDropRate": 1,
+            "stickDropRate": 0.25
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "cultivator",
+        "file": "allclasses:config/traits.json",
+        "path": "/55/attributes", //cultivator
         "value": {
-            "attributes": {
-                "produceDropRate": 0.1
-            }
+            "produceDropRate": 0.1
         }
     },
     //Negative
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "exhausted",
+        "file": "allclasses:config/traits.json",
+        "path": "/18/attributes", //exhausted
         "value": {
-            "attributes": {
-                "rangedWeaponsDamage": -0.25,
-                "bowDrawingStrength": -0.25,
-                "rangedWeaponsAcc": -0.1,
-                "rangedWeaponsSpeed": -0.15
-            }
+            "rangedWeaponsDamage": -0.25,
+            "bowDrawingStrength": -0.25,
+            "rangedWeaponsAcc": -0.1,
+            "rangedWeaponsSpeed": -0.15
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "inaccurate",
+        "file": "allclasses:config/traits.json",
+        "path": "/19/attributes", //inaccurate
         "value": {
-            "attributes": {
-                "rangedWeaponsAcc": -0.2,
-                "rangedWeaponsSpeed": -0.15
-            }
+            "rangedWeaponsAcc": -0.2,
+            "rangedWeaponsSpeed": -0.15
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "clumsy",
+        "file": "allclasses:config/traits.json",
+        "path": "/24/attributes", //clumsy
         "value": {
-            "attributes": {
-                "armorDurabilityLoss": 0.15
-            }
+            "armorDurabilityLoss": 0.15
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "nervousall",
+        "file": "allclasses:config/traits.json",
+        "path": "/25/attributes", //nervousall
         "value": {
-            "attributes": {
-                "armorDurabilityLoss": 0.25,
-                "meleeWeaponsDamage": -0.1
-            }
+            "armorDurabilityLoss": 0.25,
+            "meleeWeaponsDamage": -0.1
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "civilall",
+        "file": "allclasses:config/traits.json",
+        "path": "/32/attributes", //civilall
         "value": {
-            "attributes": {
-                "animalLootDropRate": -0.25,
-                "animalHarvestingTime": 0.5,
-                "forageDropRate": -0.1,
-                "wildCropDropRate": -0.1
-            }
+            "animalLootDropRate": -0.25,
+            "animalHarvestingTime": 0.5,
+            "forageDropRate": -0.1,
+            "wildCropDropRate": -0.1
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "heavyfooted",
+        "file": "allclasses:config/traits.json",
+        "path": "/38/attributes", //heavyfooted
         "value": {
-            "attributes": {
-                "animalSeekingRange": 0.4,
-                "walkspeed": -0.05
-            }
+            "animalSeekingRange": 0.4,
+            "walkspeed": -0.05
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "weakall",
+        "file": "allclasses:config/traits.json",
+        "path": "/45/attributes", //weakall
         "value": {
-            "attributes": {
-                "maxhealthExtraPoints": -2.5
-            }
+            "maxhealthExtraPoints": -2.5
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "fragile",
+        "file": "allclasses:config/traits.json",
+        "path": "/46/attributes", //fragile
         "value": {
-            "attributes": {
-                "maxhealthExtraPoints": -3
-            }
+            "maxhealthExtraPoints": -3
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "ravenousall",
+        "file": "allclasses:config/traits.json",
+        "path": "/48/attributes", //ravenousall
         "value": {
-            "attributes": {
-                "hungerrate": 0.20
-            }
+            "hungerrate": 0.20
         }
     },
     {
         "op": "replace",
-        "file": "allclasses/config/traits.json",
-        "path": "unwell",
+        "file": "allclasses:config/traits.json",
+        "path": "/50/attributes", //unwell
         "value": {
-            "attributes": {
-                "healingeffectivness": -0.25,
-                "armorWalkSpeedAffectedness": 0.1
-            }
+            "healingeffectivness": -0.25,
+            "armorWalkSpeedAffectedness": 0.1
         }
     }
 ]

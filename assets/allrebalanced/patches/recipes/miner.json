@@ -1,7 +1,7 @@
 [
     {
         "op": "replace",
-        "file": "allclasses/recipes/miner.json",
+        "file": "allclasses:recipes/grid/miner.json",
         "path": "/5",
         "value": {
             "ingredientPattern": "CBC,SPS,_C_",
@@ -40,7 +40,7 @@
     },
     {
         "op": "replace",
-        "file": "allclasses/recipes/miner.json",
+        "file": "allclasses:recipes/grid/miner.json",
         "path": "/6",
         "value": {
             "ingredientPattern": "PSB,RCR",

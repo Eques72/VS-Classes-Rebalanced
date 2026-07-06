@@ -1,7 +1,7 @@
 [
     {
         "op": "addeach",
-        "file": "allclasses/recipes/medic.json",
+        "file": "allclasses:recipes/grid/medic.json",
         "path": "/-",
         "value": [
             {
@@ -92,7 +92,7 @@
                     "S": {
                         "type": "item",
                         "code": "game:powder-sulfur",
-                        "quantity": 2
+                        "quantity": 1
                     },
                     "B": {
                         "type": "block",
@@ -192,7 +192,7 @@
                     "S": {
                         "type": "item",
                         "code": "game:powder-sulfur",
-                        "quantity": 2
+                        "quantity": 1
                     },
                     "B": {
                         "type": "block",
