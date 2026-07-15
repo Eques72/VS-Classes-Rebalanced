@@ -3,6 +3,7 @@
 ## Reasoning
 
 ## Balancing
+New recipe: Salt from boiling seawater in pot
 
 ## Compatibility
 ...
@@ -10,5 +11,6 @@
 
 ## License
 [MIT Standard License](https://github.com/Eques72/)
+
 ## Author
 [**@Eques**](https://github.com/Eques72), 2026
