@@ -77,16 +77,16 @@ Changes, additions and balancing.
   - **Mercantile:** Allows the crafting of the 15-slot LV Handbag, pirate gold coins, and rusty gears.
   - + **Scavenger:** +20% wild crop drops, +30% forage drops.
   - **Sneaky:** ~~-60% animal detection range, +15% walk speed.~~ → -40% animal detection range, +5% walk speed.
-  - **Squeamish:** -25% animal loot drops, +10% animal harvesting time.
   - + **Clumsy:** +15% armor durability loss.
+  - **Squeamish:** -25% animal loot drops, +10% animal harvesting time.
 
 - **Miner:**
   - **Prospector:** Allows cheaper crafting of rock bombs, blasting powder, and waterproof lanterns.
   - + **Pilferer:** +15% drop rate from cracked vessels, +10% rusty gear drop rate, 12% chance to collect cracked vessels.
   - + **Fasting:** -15% hunger rate.
   - **Miner:** ~~+40% ore drops, +100% mining speed.~~ → +25% ore drops, +50% mining speed.
-  - **Exhausted:** ~~-35% ranged weapon damage, -35% bow drawing strength, -20% ranged weapon accuracy, -30% ranged weapon speed.~~ → -25% ranged weapon damage, -25% bow drawing strength, -10% ranged weapon accuracy, -15% ranged weapon speed.
   - + **Unwell:** -25% healing effectiveness, +10% armor movement-speed penalty.
+  - **Exhausted:** ~~-35% ranged weapon damage, -35% bow drawing strength, -20% ranged weapon accuracy, -30% ranged weapon speed.~~ → -25% ranged weapon damage, -25% bow drawing strength, -10% ranged weapon accuracy, -15% ranged weapon speed.
 
 - **Mystic:**
   - **Transcription:** Allows the crafting of carpets and parchment and the summoning of butterflies.
