@@ -214,7 +214,7 @@
         "file": "allclasses:config/traits.json",
         "path": "/48/attributes", //ravenousall
         "value": {
-            "hungerrate": 0.20
+            "hungerrate": 0.2
         }
     },
     {
