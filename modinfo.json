@@ -2,7 +2,7 @@
   "type": "content",
   "modid": "allrebalanced",
   "name": "AllClasses Rebalanced",
-  "description" : "",
+  "description" : "An AllClasses patch focused on balanced traits, class identity, and better cooperation between players. It reworks modifiers and introduces new exclusive recipes.",
   "authors": ["Eques72"],
   "version": "1.0.0",
   "side": "Universal",
