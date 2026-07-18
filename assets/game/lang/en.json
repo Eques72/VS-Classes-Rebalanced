@@ -2,7 +2,7 @@
     "game:trait-soldierall": "<font color=\"#84ff84\">• Soldier</font>",
     "game:trait-ravenousall": "<font color=\"#ff8484\">• Ravenous</font>",
     "game:charattribute-produceDropRate-0.1": "+10% extra produce when harvesting planted crops",
-    "game:charattribute-stickDropRate-0.25": "+25% chance to get double sticks from branches",
+    "game:charattribute-stickDropRate-0.25": "25% chance to get double sticks from branches",
     "game:charattribute-mechanicalsDamage-0.3": "+30% damage against mechanicals",
     "game:charattribute-hungerrate-0.2": "+20% hunger rate",
     "game:charattribute-hungerrate--0.15": "-15% hunger rate",
@@ -34,19 +34,10 @@
     "game:charattribute-rangedWeaponsSpeed-0.1": "+10% faster ranged weapons",
     "game:charattribute-rangedWeaponsAcc--0.1": "-10% ranged accuracy",
     "game:charattribute-rangedWeaponsAcc-0.1": "+10% ranged accuracy",
-    "game:charattribute-rangedWeaponsDamage-0.1": "+10% ranged damage"
+    "game:charattribute-rangedWeaponsDamage-0.1": "+10% ranged damage",
+    "game:traitdesc-clothier": "Exclusive craftables: <a href=\"handbook://item-sewingkit\">sewing kit</a> and various <a href=\"handbooksearch://clothing\">clothing</a>, including winter clothes and ability to create cheaper <a href=\"handbook://item-flaxtwine\">twines</a>, <a href=\"handbook://item-sail\">sails</a> and <a href=\"handbook://item-sail-large-oak\">large sails</a>",
+    "game:traitdesc-transmutation": "Able to create <a href=\"handbook://item-ore-sulfur\">sulfur</a>, <a href=\"handbook://item-saltpeter\">saltpeter</a>, <a href=\"handbook://item-rot\">rot</a> from bones, transmute <a href=\"handbook://item-metalbit-silver\">silver</a>, <a href=\"handbook://item-metalbit-gold\">gold</a> and <a href=\"handbook://item-metalbit-electrum\">electrum</a>, efficiently craft <a href=\"handbook://block-bomb-scrap\">scrap bombs</a> and <a href=\"handbook://item-blastingpowder\">blasting powder</a>",
+    "game:traitdesc-tinkerer": "Exclusive craftable <a href=\"handbook://item-spear-generic-hacking\">Tuning spear</a> to tame locusts and ability to craft <a href=\"handbooksearch://mechanical\">mechanical parts</a> and <a href=\"handbooksearch://chute\">chutes</a> with higher efficiency",
+    "game:traitdesc-surgeon": "Able to craft a <a href=\"handbook://poultice-grass-flower\">weak poultice from grass and flowers</a> and create <a href=\"handbooksearch://poultice from\">all other polutices</a> and <a href=\"handbook://item-bandage-clean\">bandages</a> more efficiently",
+    "game:traitdesc-mason": "Creates <a href=\"handbook://item-mortar\">mortar</a>, <a href=\"handbook://block-plaster-plain\">plaster</a>, <a href=\"handbooksearch://unfired refractory\">refractory</a>, and <a href=\"handbook://item-rawbrick-fire\">raw bricks</a> at lower costs, can directly make <a href=\"handbooksearch://ashlar block\">stone bricks</a> from stones, and has access to <a href=\"handbook://item-burnedbrick-brown\">brown clay bricks.</a>"
 }
-
-//replace
-//  "game:traitdesc-clothier": "ALL B4 and Able to create cheaper <a href=\"handbooksearch://flaxtwine\">twines</a>, <a href=\"handbooksearch://sail\">sails</a> and <a href=\"handbooksearch://large sail\">large sails</a>",
-
-//  "game:traitdesc-transmutation": "Able to craft <a href=\"handbooksearch://sulfur chunk\">sulfur</a>, <a href=\"handbooksearch://saltpeter\">saltpeter</a>, <a href=\"handbooksearch://rot\">rot</a> from bones, transmute silver, gold and electrum, efficiently create <a href=\"handbooksearch://scrap bomb\">scrap bombs</a> and <a href=\"handbooksearch://blastingpowder\">blastingpowder</a>",
-
-//  "game:traitdesc-tinkerer": "### ALL B4 and Able to craft mechanical parts such as <a href=\"handbooksearch://clutch\">clutches</a> or <a href=\"handbooksearch://chute\">chutes</a> with higher efficiency",
-// clutch
-// woodentoggle
-// spurgear
-// transmission
-
-// "game:traitdesc-surgeon": "Able to craft a <a href=\"handbooksearch://poultice-grass-flower\">weak poultice from grass and flowers</a> and create other polutices and bandages more efficiently",
-
