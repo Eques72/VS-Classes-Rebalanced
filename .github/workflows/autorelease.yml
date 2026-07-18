@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for packzip.sh
+        id: script
+        run: |
+          if [ -f "./packzip.sh" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "script.sh not found. Skipping."
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run script
+        if: steps.script.outputs.exists == 'true'
+        run: |
+          chmod +x ./packzip.sh
+          ./packzip.sh
+
+      - name: Is Zip file created
+        if: steps.script.outputs.exists == 'true'
+        id: zip
+        run: |
+          ZIP_FILE=$(find . -maxdepth 1 -type f -name "*.zip" | head -n 1)
+
+          if [ -z "$ZIP_FILE" ]; then
+            echo "created=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "created=true" >> "$GITHUB_OUTPUT"
+            echo "file=$ZIP_FILE" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create release
+        if: steps.script.outputs.exists == 'true' && steps.zip.outputs.created == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ZIP="${{ steps.zip.outputs.file }}"
+          NAME=$(basename "$ZIP" .zip)
+          
+          if gh release view "$NAME" >/dev/null 2>&1; then
+            echo "Release '$NAME' already exists. Skipping."
+            exit 0
+          fi
+          
+          gh release create "$NAME" "$ZIP" \
+            --title "$NAME" \
+            --notes "Automated release"
