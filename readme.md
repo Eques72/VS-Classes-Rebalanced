@@ -36,7 +36,7 @@ This mod is a custom and unofficial patch for [AllClasses](https://mods.vintages
 Thank you for creating and supporting such a robust and elaborate mod!
 [DejFidOFF](https://linktr.ee/DejFidOFF) is in no way responsible for any issues or effects that this mod may have on your worlds.
 
-## Mod Descriptopn
+## Mod Description
 Changes, additions and balancing.
 ### Traits
 #### Base Game Classes
