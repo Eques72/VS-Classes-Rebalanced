@@ -1,0 +1,170 @@
+[
+    {
+        "enabled": false,
+        "ingredientPattern": "AR",
+        "requiresTrait": "smith",
+        "ingredients": {
+            "A": {
+                "type": "item",
+                "code": "vanillaarmory:trackerarmor-*-body",
+                "name": "metal"
+            },
+            "R": {
+                "type": "item",
+                "code": "allclasses:tools-*",
+                "isTool": true,
+                "toolDurabilityCost": 10
+            }
+        },
+        "width": 2,
+        "height": 1,
+        "recipeGroup": 3,
+        "shapeless": true,
+        "averageDurability": false,
+        "copyAttributesFrom": "A",
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:trackerarmor-{metal}-body"
+        }
+    },
+        {
+        "enabled": false,
+        "ingredientPattern": "AR",
+        "requiresTrait": "smith",
+        "ingredients": {
+            "A": {
+                "type": "item",
+                "code": "vanillaarmory:trackerarmor-*-legs",
+                "name": "metal"
+            },
+            "R": {
+                "type": "item",
+                "code": "allclasses:tools-*",
+                "isTool": true,
+                "toolDurabilityCost": 10
+            }
+        },
+        "width": 2,
+        "height": 1,
+        "recipeGroup": 3,
+        "shapeless": true,
+        "averageDurability": false,
+        "copyAttributesFrom": "A",
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:trackerarmor-{metal}-legs"
+        }
+    },
+        {
+        "enabled": false,
+        "ingredientPattern": "AR",
+        "requiresTrait": "smith",
+        "ingredients": {
+            "A": {
+                "type": "item",
+                "code": "vanillaarmory:trackerarmor-*-head",
+                "name": "metal"
+            },
+            "R": {
+                "type": "item",
+                "code": "allclasses:tools-*",
+                "isTool": true,
+                "toolDurabilityCost": 10
+            }
+        },
+        "width": 2,
+        "height": 1,
+        "recipeGroup": 3,
+        "shapeless": true,
+        "averageDurability": false,
+        "copyAttributesFrom": "A",
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:trackerarmor-{metal}-head"
+        }
+    },
+        {
+        "enabled": false,
+        "ingredientPattern": "AR",
+        "requiresTrait": "smith",
+        "ingredients": {
+            "A": {
+                "type": "item",
+                "code": "vanillaarmory:acolytearmor-*-body",
+                "name": "metal"
+            },
+            "R": {
+                "type": "item",
+                "code": "allclasses:tools-*",
+                "isTool": true,
+                "toolDurabilityCost": 15
+            }
+        },
+        "width": 2,
+        "height": 1,
+        "recipeGroup": 3,
+        "shapeless": true,
+        "averageDurability": false,
+        "copyAttributesFrom": "A",
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:acolytearmor-{metal}-body"
+        }
+    },
+        {
+        "enabled": false,
+        "ingredientPattern": "AR",
+        "requiresTrait": "smith",
+        "ingredients": {
+            "A": {
+                "type": "item",
+                "code": "vanillaarmory:acolytearmor-*-legs",
+                "name": "metal"
+            },
+            "R": {
+                "type": "item",
+                "code": "allclasses:tools-*",
+                "isTool": true,
+                "toolDurabilityCost": 15
+            }
+        },
+        "width": 2,
+        "height": 1,
+        "recipeGroup": 3,
+        "shapeless": true,
+        "averageDurability": false,
+        "copyAttributesFrom": "A",
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:acolytearmor-{metal}-legs"
+        }
+    },
+        {
+        "enabled": false,
+        "ingredientPattern": "AR",
+        "requiresTrait": "smith",
+        "ingredients": {
+            "A": {
+                "type": "item",
+                "code": "vanillaarmory:acolytearmor-*-head",
+                "name": "metal"
+            },
+            "R": {
+                "type": "item",
+                "code": "allclasses:tools-*",
+                "isTool": true,
+                "toolDurabilityCost": 15
+            }
+        },
+        "width": 2,
+        "height": 1,
+        "recipeGroup": 3,
+        "shapeless": true,
+        "averageDurability": false,
+        "copyAttributesFrom": "A",
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:acolytearmor-{metal}-head"
+        }
+    }
+]
