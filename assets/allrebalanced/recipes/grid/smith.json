@@ -10,14 +10,14 @@
             },
             "R": {
                 "type": "item",
-                "code": "tools-*",
+                "code": "allclasses:tools-*",
                 "isTool": true,
                 "toolDurabilityCost": 45
             }
         },
         "width": 2,
         "height": 1,
-        "recipeGroup": 2,
+        "recipeGroup": 3,
         "shapeless": true,
         "averageDurability": false,
         "copyAttributesFrom": "A",
@@ -37,14 +37,14 @@
             },
             "R": {
                 "type": "item",
-                "code": "tools-*",
+                "code": "allclasses:tools-*",
                 "isTool": true,
                 "toolDurabilityCost": 45
             }
         },
         "width": 2,
         "height": 1,
-        "recipeGroup": 2,
+        "recipeGroup": 3,
         "shapeless": true,
         "averageDurability": false,
         "copyAttributesFrom": "A",
@@ -64,14 +64,14 @@
             },
             "R": {
                 "type": "item",
-                "code": "tools-*",
+                "code": "allclasses:tools-*",
                 "isTool": true,
                 "toolDurabilityCost": 45
             }
         },
         "width": 2,
         "height": 1,
-        "recipeGroup": 2,
+        "recipeGroup": 3,
         "shapeless": true,
         "averageDurability": false,
         "copyAttributesFrom": "A",

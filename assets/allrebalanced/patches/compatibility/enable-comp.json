@@ -1,0 +1,68 @@
+[
+    {
+        "op": "replace",
+        "file": "allrebalanced:recipes/grid/compatibility/vanillaarmory.json",
+        "path": "/0/enabled",
+        "value": true,
+        "dependsOn": [
+            {
+                "modid": "vanillaarmory"
+            }
+        ]
+    },
+    {
+        "op": "replace",
+        "file": "allrebalanced:recipes/grid/compatibility/vanillaarmory.json",
+        "path": "/1/enabled",
+        "value": true,
+        "dependsOn": [
+            {
+                "modid": "vanillaarmory"
+            }
+        ]
+    },
+    {
+        "op": "replace",
+        "file": "allrebalanced:recipes/grid/compatibility/vanillaarmory.json",
+        "path": "/2/enabled",
+        "value": true,
+        "dependsOn": [
+            {
+                "modid": "vanillaarmory"
+            }
+        ]
+    },
+    {
+        "op": "replace",
+        "file": "allrebalanced:recipes/grid/compatibility/vanillaarmory.json",
+        "path": "/3/enabled",
+        "value": true,
+        "dependsOn": [
+            {
+                "modid": "vanillaarmory"
+            }
+        ]
+    },
+    {
+        "op": "replace",
+        "file": "allrebalanced:recipes/grid/compatibility/vanillaarmory.json",
+        "path": "/4/enabled",
+        "value": true,
+        "dependsOn": [
+            {
+                "modid": "vanillaarmory"
+            }
+        ]
+    },
+    {
+        "op": "replace",
+        "file": "allrebalanced:recipes/grid/compatibility/vanillaarmory.json",
+        "path": "/5/enabled",
+        "value": true,
+        "dependsOn": [
+            {
+                "modid": "vanillaarmory"
+            }
+        ]
+    }
+]
