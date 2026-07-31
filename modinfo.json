@@ -4,12 +4,12 @@
   "name": "AllClasses Rebalanced",
   "description" : "An AllClasses patch focused on balanced traits, class identity, and better cooperation between players. It reworks modifiers and introduces new exclusive recipes.",
   "authors": ["Eques72"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "side": "Universal",
   "requiredonclient": true,
   "requiredonserver": true,
   "Dependencies": { 
-	"game": "1.22.3",
-	"allclasses": "2.3.0"
+	"game": "1.22.5",
+	"allclasses": "2.3.1"
   }
 }
