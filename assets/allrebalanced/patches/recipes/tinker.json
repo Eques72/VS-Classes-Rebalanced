@@ -8,20 +8,8 @@
     {
         "op": "replace",
         "file": "allclasses:recipes/grid/tinker.json",
-        "path": "/1/ingredients/F/code",
-        "value": "game:fat-rendered"
-    },
-    {
-        "op": "replace",
-        "file": "allclasses:recipes/grid/tinker.json",
         "path": "/2/requiresTrait",
         "value": "tinkerer"
-    },
-    {
-        "op": "replace",
-        "file": "allclasses:recipes/grid/tinker.json",
-        "path": "/2/ingredients/F/code",
-        "value": "game:fat-rendered"
     },
     {
         "op": "replace",
