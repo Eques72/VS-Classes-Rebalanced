@@ -1,0 +1,22 @@
+[
+  {
+    "code": "bastion",
+	"traits": ["beacon_ar", "projectile_resistance_ar", "tauting_ar"],
+	"gear": 
+	[
+        // {"type": "item","code": "game:clothes-" },
+        // {"type": "item","code": "game:clothes-" },
+        // {"type": "item","code": "game:clothes-" },
+        // {"type": "item","code": "game:clothes-" },
+        // {"type": "item","code": "game:clothes-" },
+        // {"type": "item","code": "game:clothes-" }
+	]
+  }
+]
+// class - sneaky, less visibility, bonus damage when hidden
+// class - alvays glowing seraph, tanky, procjctile resistance
+// class - Armorer, alternative chaeaper armor recipes ?
+// upgrade - artist can make shilde ornate from already build plain shields
+// class - sailor, boat sails faster, swims faster, better fishing maybe, cheaper boat related stiuff
+    //https://github.com/anegostudios/vssurvivalmod/blob/master/Systems/Boats/EntityBoat.cs#L227
+// class - mule - gets bigger eq?

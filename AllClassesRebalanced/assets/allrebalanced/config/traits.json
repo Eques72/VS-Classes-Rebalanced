@@ -1,3 +1,25 @@
 [
-    
+  {
+    "code": "beacon_ar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "projectile_resistance_ar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "tauting_ar",
+    "type": "negative",
+    "attributes": {
+      "animalSeekingRange": 0.6
+      //enemyseekingrange
+    }
+  },
+  {
+    "code": "mule_ar",
+    "type": "positive",
+    "attributes": {}
+  }
 ]
