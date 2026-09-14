@@ -10,6 +10,7 @@
   "requiredonserver": true,
   "Dependencies": { 
 	"game": "1.22.5",
+  "survival": "1.22.0",
 	"allclasses": "2.3.1"
   }
 }

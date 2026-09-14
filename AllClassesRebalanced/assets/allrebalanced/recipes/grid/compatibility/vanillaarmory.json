@@ -166,5 +166,40 @@
             "type": "item",
             "code": "vanillaarmory:acolytearmor-{metal}-head"
         }
+    },
+    {
+        "enabled": false,
+        "ingredientPattern": "BPB,LUG,BPB",
+        "requiresTrait": "oath_taker_ar",
+        "ingredients": {
+            "B": {
+                "type": "item",
+                "code": "game:ingot-meteoriciron"
+            },
+            "P": {
+                "type": "item",
+                "code": "game:plank-*", "skipVariants": ["aged"], "quantity": 4
+            },
+            "L": {
+                "type": "item",
+                "code": "game:leather-normal-plain", "quantity": 2
+            },
+            "G": {
+                "type": "item",
+                "code": "game:gear-temporal"
+            },
+            "U": {
+                "type": "item",
+                "code": "game:boss-meteoriciron"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "recipeGroup": 1,
+        "shapeless": false,
+        "output": {
+            "type": "item",
+            "code": "vanillaarmory:forlorn-shield"
+        }
     }
 ]
