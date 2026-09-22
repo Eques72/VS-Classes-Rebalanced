@@ -17,6 +17,8 @@
 *.zip
 *.code-workspace
 AllClassesRebalanced/compare/*
+AGENTS.md
+runVS.sh
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

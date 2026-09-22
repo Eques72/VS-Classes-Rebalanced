@@ -5,6 +5,7 @@ using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using HarmonyLib;
+using Vintagestory.API.Datastructures;
 using System.Linq;
 
 namespace AllClassesRebalanced;
@@ -139,7 +140,7 @@ public class AllClassesRebalancedModSystem : ModSystem
     {
         Mod.Logger.Notification("Hello AllClassesRebalanced: " + api.Side);
 
-        new Harmony("allclassesrebalanced").PatchAll();
+        new Harmony("allrebalanced").PatchAll(); //to Start()?
         // api.Event.PlayerEntitySpawn += RegisterGlowListener;
     }
 
@@ -151,6 +152,19 @@ public class AllClassesRebalancedModSystem : ModSystem
             return;
 
         UpdateGlowAttribute(player.Entity);
+player.Entity.WatchedAttributes.RegisterModifiedListener("hunger", () =>
+{
+    ITreeAttribute hunger =
+        player.Entity.WatchedAttributes.GetTreeAttribute("hunger");
+
+    float fruit = hunger.GetFloat("fruitLevel");
+            Mod.Logger.Notification("AllClassesRebalanced: FRUIT LEVEL ", fruit.ToString());
+            if (fruit < 750){
+                UpdateGlowAttribute(player.Entity, false);
+            }
+            else
+                UpdateGlowAttribute(player.Entity, true);
+        });
     }
 
     private void ApplyGlow(IServerPlayer player)
@@ -176,10 +190,10 @@ public class AllClassesRebalancedModSystem : ModSystem
 
 
     //Common
-    private static void UpdateGlowAttribute(EntityPlayer player)
+    private static void UpdateGlowAttribute(EntityPlayer player, bool shouldGlow = true)
     {
-        bool hasGlow = TraitHelper.IsGlowing(player.Player);
-
+        bool hasGlow = TraitHelper.IsGlowing(player.Player) && shouldGlow;
+        Logger.Notification("AllClassesRebalanced: Has Glow? ", hasGlow.ToString());
         player.WatchedAttributes.SetBool(
             BeaconWatchedAttribute,
             hasGlow

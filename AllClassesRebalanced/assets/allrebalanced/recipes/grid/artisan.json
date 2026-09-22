@@ -109,7 +109,7 @@
         "averageDurability": false,
         "output": {
             "type": "item",
-            "code": "shield-metal",
+            "code": "game:shield-metal",
             "attributes": {
                 "metal": "{metal}",
                 "color": "{color}",

@@ -1,6 +1,6 @@
 [
   {
-    "code": "bastion",
+  "code": "bastion",
 	"traits": ["oath_taker_ar", "beacon_ar", "projectile_resistance_ar", "prudent_ar", "tauting_ar", "hesitative_ar"],
 	"gear": 
 	[
@@ -11,23 +11,4 @@
         {"type": "item","code": "game:clothes-foot-miner" }
 	]
   }
-  // {
-  //   "code": "armorer",
-	// "traits": ["metalurgy_ar", "menderall"],
-	// "gear": 
-	// [
-  //       {"type": "item","code": "game:clothes-upperbody-forlorn-tunic" },
-  //       {"type": "item","code": "game:clothes-shoulder-forlorn-sash" },
-  //       {"type": "item","code": "game:clothes-nadiya-upperbodyover-tailor" },
-  //       {"type": "item","code": "game:clothes-lowerbody-malefactor-trousers" },
-  //       {"type": "item","code": "game:clothes-foot-miner" }
-	// ]
-  // }
 ]
-// class - sneaky, less visibility, bonus damage when hidden
-// class - alvays glowing seraph, tanky, procjctile resistance
-// class - Armorer, alternative chaeaper armor recipes ?
-// upgrade - artist can make shilde ornate from already build plain shields
-// class - sailor, boat sails faster, swims faster, better fishing maybe, cheaper boat related stiuff
-    //https://github.com/anegostudios/vssurvivalmod/blob/master/Systems/Boats/EntityBoat.cs#L227
-// class - mule - gets bigger eq?
