@@ -36,7 +36,10 @@
             },
             "G": {
                 "type": "item",
-                "code": "game:gem-diamond-rough-*"
+                "code": "game:gem-diamond-rough",
+                "attributes": {
+                    "potential": "low"
+                }
             },
             "R": {
                 "type": "item",
