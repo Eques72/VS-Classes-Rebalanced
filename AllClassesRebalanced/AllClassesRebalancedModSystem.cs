@@ -31,19 +31,24 @@ public class AllClassesRebalancedModSystem : ModSystem
         {
             return;
         }
+        float? fruitLevel = ReadWatchedFruitLevel(player.Entity);
+        UpdateGlowAttribute(player.Entity, fruitLevel?.CompareTo(GlowFruitLevelThreshold) >= 0 || fruitLevel is null);
 
-        UpdateGlowAttribute(player.Entity);
         player.Entity.WatchedAttributes.RegisterModifiedListener("hunger", () =>
         {
-            ITreeAttribute hunger = player.Entity.WatchedAttributes.GetTreeAttribute("hunger");
-            if (hunger == null)
-            {
-                return;
-            }
-
-            float fruit = hunger.GetFloat("fruitLevel");
-            UpdateGlowAttribute(player.Entity, fruit >= GlowFruitLevelThreshold);
+            float? fruitLevel = ReadWatchedFruitLevel(player.Entity);
+            UpdateGlowAttribute(player.Entity, fruitLevel?.CompareTo(GlowFruitLevelThreshold) >= 0 || fruitLevel is null);
         });
+    }
+
+    private static float? ReadWatchedFruitLevel(EntityPlayer eplayer)
+    {
+        ITreeAttribute hunger = eplayer.WatchedAttributes.GetTreeAttribute("hunger");
+        if (hunger == null)
+        {
+            return null;
+        }
+        return hunger.GetFloat("fruitLevel");
     }
 
     private static void UpdateGlowAttribute(EntityPlayer player, bool shouldGlow = true)
