@@ -653,7 +653,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -706,7 +706,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -759,7 +759,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -812,7 +812,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -865,7 +865,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -918,7 +918,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -971,7 +971,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -1024,7 +1024,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -1077,7 +1077,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -1130,7 +1130,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -1183,7 +1183,7 @@
         }
     },
     {
-        "ingredientPattern": "S_W,_T_,Y_O",
+        "ingredientPattern": "S_W,_T_,G_O",
         "requiresTrait": "artifice",
         "ingredients": {
             "W": {
@@ -1231,6 +1231,127 @@
                 "wood": "generic",
                 "color": "yellow",
                 "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "L_L,_T_,L_L",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "L": {
+                "type": "item",
+                "code": "game:leather-normal-*",
+                "name": "color",
+                "allowedVariants": ["orange", "black", "red", "blue", "purple", "white", "yellow", "gray", "green"],
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "woodmetal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "recipeGroup": 3,
+        "output": {
+            "type": "item",
+            "code": "game:shield-woodmetalleather",
+            "attributes": {
+                "wood": "generic",
+                "color": "{color}",
+                "deco": "none"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "L_L,_T_,L_L",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "L": {
+                "type": "item",
+                "code": "game:leather-normal-plain",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "woodmetal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "recipeGroup": 3,
+        "output": {
+            "type": "item",
+            "code": "game:shield-woodmetalleather",
+            "attributes": {
+                "wood": "generic",
+                "color": "brown",
+                "deco": "none"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "G_W,_T_,W_G",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "G": {
+                "type": "item",
+                "code": "game:leather-normal-orange",
+                "quantity": 1
+            },
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-black",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "woodmetal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "recipeGroup": 3,
+        "output": {
+            "type": "item",
+            "code": "game:shield-woodmetalleather",
+            "attributes": {
+                "wood": "generic",
+                "color": "redblack",
+                "deco": "none"
             },
             "quantity": 1
         }
