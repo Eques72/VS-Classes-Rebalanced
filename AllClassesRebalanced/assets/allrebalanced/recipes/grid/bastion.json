@@ -1,0 +1,62 @@
+[
+    {
+        "ingredientPattern": "_B_,NTN,_N_",
+        "requiresTrait": "oath_taker_ar",
+        "ingredients": {
+            "N": {
+                "type": "item",
+                "code": "game:metalbit-gold"
+            },
+            "T": {
+                "type": "item",
+                "code": "game:clothes-neck-gear-amulet-temporal"
+            },
+            "B": {
+                "type": "item",
+                "code": "game:ingot-gold"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "recipeGroup": 0,
+        "shapeless": false,
+        "output": {
+            "type": "item",
+            "code": "game:clothes-neck-gear-amulet-gold"
+        }
+    },
+    {
+        "ingredientPattern": "BGB,_R_,_P_",
+        "requiresTrait": "oath_taker_ar",
+        "ingredients": {
+            "B": {
+                "type": "item",
+                "code": "game:metalbit-gold",
+                "quantity": 4
+            },
+            "G": {
+                "type": "item",
+                "code": "game:gem-diamond-rough",
+                "attributes": {
+                    "potential": "low"
+                }
+            },
+            "R": {
+                "type": "item",
+                "code": "game:rod-gold"
+            },
+            "P": {
+                "type": "item",
+                "code": "game:metalplate-gold"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "recipeGroup": 0,
+        "shapeless": false,
+        "output": {
+            "type": "item",
+            "code": "game:clutter-art/gear3"
+        }
+    }
+]

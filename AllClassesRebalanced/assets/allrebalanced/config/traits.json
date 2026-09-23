@@ -1,0 +1,46 @@
+[
+  {
+    "code": "beacon_ar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "projectile_resistance_ar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "mule_ar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "oath_taker_ar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "prudent_ar",
+    "type": "positive",
+    "attributes": {
+      "armorDurabilityLoss": -0.2,
+      "armorWalkSpeedAffectedness": -0.25
+    }
+  },
+  {
+    "code": "tauting_ar",
+    "type": "negative",
+    "attributes": {
+      "animalSeekingRange": 0.6,
+      "produceDropRate": -0.25
+    }
+  },
+  {
+    "code": "hesitative_ar",
+    "type": "negative",
+    "attributes": {
+      "meleeWeaponsDamage": -0.1,
+      "rangedWeaponsDamage": -0.1
+    }
+  }
+]

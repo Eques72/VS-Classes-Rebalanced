@@ -1,0 +1,2 @@
+- Traits have hard coded values, most of them should be accesible as atributes.
+- Glow strength should be determinet by proportion of fruit level
