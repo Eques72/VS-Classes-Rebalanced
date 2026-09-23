@@ -81,40 +81,564 @@
         }
     },
     {
-        "ingredientPattern": "SL",
-        "requiresTrait": "clothier",
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
         "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-white",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-yellow",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-orange",
+                "quantity": 1
+            },
             "S": {
                 "type": "item",
-                "code": "shield-{construction}",
-                "name": "construction",
-                "allowedVariants": ["metal"],
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
                 "attributes": {
                     "deco": "none"
                 },
                 "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "white",
+                "deco": "ornate"
             },
-            "L": {
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
                 "type": "item",
-                "code": "leather-normal-{color}",
-                "name": "color",
-                "allowedVariants": ["red"],
+                "code": "game:leather-normal-black",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-red",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-yellow",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
                 "quantity": 1
             }
         },
-        "width": 2,
-        "height": 1,
-        "shapeless": true,
-        "copyAttributesFrom": "S",
+        "width": 3,
+        "height": 3,
         "averageDurability": false,
+        "copyAttributesFrom": "T",
         "output": {
             "type": "item",
-            "code": "game:shield-metal",
+            "code": "game:shield-{type}",
             "attributes": {
-                "metal": "{metal}",
-                "color": "{color}",
+                "color": "black",
                 "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-blue",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-green",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-yellow",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
             }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "blue",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-plain",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-green",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-gray",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "brown",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-gray",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-purple",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-white",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "gray",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-green",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-yellow",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-gray",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "green",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-orange",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-green",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-blue",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "orange",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-pink",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-green",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-white",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "pink",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-purple",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-pink",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-gray",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "purple",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-red",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-white",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-gray",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "red",
+                "deco": "ornate"
+            },
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "S_W,_T_,Y_O",
+        "requiresTrait": "artifice",
+        "ingredients": {
+            "W": {
+                "type": "item",
+                "code": "game:leather-normal-yellow",
+                "quantity": 2
+            },
+            "Y": {
+                "type": "item",
+                "code": "game:leather-normal-white",
+                "quantity": 1
+            },
+            "O": {
+                "type": "item",
+                "code": "game:leather-normal-black",
+                "quantity": 1
+            },
+            "S": {
+                "type": "item",
+                "code": "game:sewingkit",
+                "quantity": 1
+            },
+            "T": {
+                "type": "item",
+                "code": "game:shield-*",
+                "name": "type",
+                "allowedVariants": [
+                    "metal"
+                ],
+                "attributes": {
+                    "deco": "none"
+                },
+                "quantity": 1
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "averageDurability": false,
+        "copyAttributesFrom": "T",
+        "output": {
+            "type": "item",
+            "code": "game:shield-{type}",
+            "attributes": {
+                "color": "yellow",
+                "deco": "ornate"
+            },
+            "quantity": 1
         }
     }
 ]
