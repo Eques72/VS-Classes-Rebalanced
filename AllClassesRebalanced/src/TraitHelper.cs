@@ -7,6 +7,7 @@ public static class TraitHelper
 {
     public const string GlowingTrait = "beacon_ar";
     public const string ProjectileResistanceTrait = "projectile_resistance_ar";
+    public const string SummonerTrait = "summoner_ar";
 
     public static bool HasTrait(IPlayer player, string traitCode)
     {
