@@ -1,0 +1,11 @@
+{
+    "code": "summoner-gear",
+    "class": "summonergear",
+    "maxstacksize": 8,
+    "creativeinventory": {
+        "general": ["*"]
+    },
+    "shape": {
+        "base": "item/food/vegetable/carrot"
+    }
+}

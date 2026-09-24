@@ -18,6 +18,11 @@ public class AllClassesRebalancedModSystem : ModSystem
     {
         Logger = api.Logger;
         new Harmony("allrebalanced").PatchAll();
+
+        api.RegisterItemClass(
+            "summonergear",
+            typeof(ItemSummonerGear)
+        );
     }
 
     public override void StartServerSide(ICoreServerAPI api)
