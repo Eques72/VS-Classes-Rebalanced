@@ -11,18 +11,18 @@ namespace AllClassesRebalanced;
 
 public class ItemSummonerGear : Item
 {
-    private readonly Random random = new();
-
     private const float USE_TIME = 3.5f;
+    private const string PARTICLE_TIME_KEY =
+        "allclassesrebalanced_particle_time";
 
-    private class SpawnEntry
+    public class SummonSpawnEntry
     {
         public string Entity { get; set; } = "";
         public int Min { get; set; }
         public int Max { get; set; }
     }
 
-    private Dictionary<string, List<SpawnEntry>>? spawningByType;
+    private Dictionary<string, List<SummonSpawnEntry>>? spawningByType;
 
     private const string REWARD_GUARD_KEY =
         "allclassesrebalanced_reward_handled";
@@ -51,118 +51,7 @@ public class ItemSummonerGear : Item
     {
         base.OnLoaded(api);
 
-        JsonObject spawningConfig = Attributes?["spawnEntries"];
-        if (spawningConfig == null || !spawningConfig.Exists)
-        {
-            api.Logger.Warning(
-                "[allrebalanced] SummonerGear has no spawnEntries configuration."
-            );
-
-            return;
-        }
-
-        spawningByType = new Dictionary<string, List<SpawnEntry>>();
-
-        foreach (JsonObject entry in spawningConfig.AsArray())
-        {
-            string selector = entry["type"].AsString("");
-            string entity = entry["entity"].AsString("");
-
-            if (string.IsNullOrWhiteSpace(selector) ||
-                string.IsNullOrWhiteSpace(entity))
-            {
-                api.Logger.Warning(
-                    "[allrebalanced] SummonerGear has a spawnEntries entry without type or entity."
-                );
-                continue;
-            }
-
-            if (!spawningByType.TryGetValue(selector, out List<SpawnEntry>? entries))
-            {
-                entries = new List<SpawnEntry>();
-                spawningByType[selector] = entries;
-            }
-
-            entries.Add(new SpawnEntry
-            {
-                Entity = entity,
-                Min = entry["min"].AsInt(1),
-                Max = entry["max"].AsInt(1)
-            });
-        }
-
-        if (spawningByType.Count == 0)
-        {
-            api.Logger.Warning(
-                "[allrebalanced] SummonerGear has no usable spawnEntries configuration."
-            );
-        }
-    }
-
-    private List<SpawnEntry>? GetSpawnEntries(ItemStack itemstack)
-    {
-        if (spawningByType == null || spawningByType.Count == 0)
-        {
-            return null;
-        }
-
-        string itemCode = itemstack.Collectible.Code.ToString();
-
-        if (spawningByType.TryGetValue(
-                itemCode,
-                out List<SpawnEntry>? exact))
-        {
-            return exact;
-        }
-
-        foreach (KeyValuePair<string, List<SpawnEntry>> entry
-                 in spawningByType)
-        {
-            string selector = entry.Key;
-
-            if (!selector.StartsWith("*", StringComparison.Ordinal))
-            {
-                continue;
-            }
-
-            string suffix = selector[1..];
-
-            if (itemCode.EndsWith(
-                    suffix,
-                    StringComparison.OrdinalIgnoreCase))
-            {
-                return entry.Value;
-            }
-        }
-
-        foreach (KeyValuePair<string, List<SpawnEntry>> entry
-                 in spawningByType)
-        {
-            string selector = entry.Key;
-
-            if (!selector.EndsWith("*", StringComparison.Ordinal))
-            {
-                continue;
-            }
-
-            string prefix = selector[..^1];
-
-            if (itemCode.StartsWith(
-                    prefix,
-                    StringComparison.OrdinalIgnoreCase))
-            {
-                return entry.Value;
-            }
-        }
-
-        if (spawningByType.TryGetValue(
-                "*",
-                out List<SpawnEntry>? fallback))
-        {
-            return fallback;
-        }
-
-        return null;
+        spawningByType = JsonHelper.ExtractSummonEntriesFromAttributes(Attributes, api);
     }
 
     public override void OnHeldInteractStart(
@@ -191,22 +80,8 @@ public class ItemSummonerGear : Item
             return;
         }
 
-        slot.Itemstack.TempAttributes.RemoveAttribute(
-            REWARD_GUARD_KEY
-        );
-
-        slot.Itemstack.TempAttributes.RemoveAttribute(
-            "allclassesrebalanced_particle_time"
-        );
-
-        slot.Itemstack.TempAttributes.SetBool(
-            ROTATION_GUARD_KEY,
-            false
-        );
-
-        slot.Itemstack.TempAttributes.RemoveAttribute(
-            ROTATION_ANGLE
-        );
+        ResetInteractionState(slot.Itemstack);
+        slot.Itemstack.TempAttributes.RemoveAttribute(REWARD_GUARD_KEY);
 
         if (blockSel == null || blockSel.Face != BlockFacing.UP)
         {
@@ -238,15 +113,7 @@ public class ItemSummonerGear : Item
             }
         }
 
-        slot.Itemstack.TempAttributes.SetBool(
-            ROTATION_GUARD_KEY,
-            true
-        );
-
-        slot.Itemstack.TempAttributes.SetFloat(
-            ROTATION_ANGLE,
-            0f
-        );
+        SetRotationState(slot.Itemstack, 0f);
     }
 
     public override bool OnHeldInteractStep(
@@ -260,16 +127,10 @@ public class ItemSummonerGear : Item
         {
             ICoreClientAPI clientApi = (ICoreClientAPI)api;
 
-            float progress = GameMath.Clamp(
-                secondsUsed / USE_TIME,
-                0f,
-                1f
-            );
-
             float shakeStrength = GameMath.Lerp(
                 CAMERA_SHAKE_MIN,
                 CAMERA_SHAKE_MAX,
-                progress
+                GetUseProgress(secondsUsed)
             );
 
             clientApi.World.AddCameraShake(shakeStrength);
@@ -277,56 +138,12 @@ public class ItemSummonerGear : Item
 
         if (api.Side == EnumAppSide.Server && blockSel != null)
         {
-            float currentInterval =
-                (float)Math.Floor(
-                    secondsUsed / PARTICLE_INTERVAL
-                ) * PARTICLE_INTERVAL;
-
-            float lastInterval =
-                slot.Itemstack?.TempAttributes.GetFloat(
-                    "allclassesrebalanced_particle_time"
-                ) ?? -1f;
-
-            if (currentInterval > lastInterval)
-            {
-                slot.Itemstack.TempAttributes.SetFloat(
-                    "allclassesrebalanced_particle_time",
-                    currentInterval
-                );
-
-                SpawnTargetParticles(
-                    blockSel,
-                    byEntity
-                );
-            }
+            SpawnParticlesAtInterval(secondsUsed, slot, blockSel, byEntity);
         }
 
         if (slot?.Itemstack != null)
         {
-            float progress = GameMath.Clamp(
-                secondsUsed / USE_TIME,
-                0f,
-                1f
-            );
-
-            _ = progress;
-
-            float angle =
-                ROTATION_MIN_SPEED * secondsUsed +
-                0.5f * (ROTATION_MAX_SPEED - ROTATION_MIN_SPEED)
-                * secondsUsed * secondsUsed;
-
-            angle %= 360f;
-
-            slot.Itemstack.TempAttributes.SetFloat(
-                ROTATION_ANGLE,
-                angle
-            );
-
-            slot.Itemstack.TempAttributes.SetBool(
-                ROTATION_GUARD_KEY,
-                true
-            );
+            UpdateRotation(slot.Itemstack, secondsUsed);
         }
 
         if (secondsUsed >= USE_TIME)
@@ -347,18 +164,7 @@ public class ItemSummonerGear : Item
     {
         if (slot?.Itemstack != null)
         {
-            slot.Itemstack.TempAttributes.SetBool(
-                ROTATION_GUARD_KEY,
-                false
-            );
-
-            slot.Itemstack.TempAttributes.RemoveAttribute(
-                ROTATION_ANGLE
-            );
-
-            slot.Itemstack.TempAttributes.RemoveAttribute(
-                "allclassesrebalanced_particle_time"
-            );
+            ResetInteractionState(slot.Itemstack);
         }
 
         return true;
@@ -373,18 +179,7 @@ public class ItemSummonerGear : Item
     {
         if (slot?.Itemstack != null)
         {
-            slot.Itemstack.TempAttributes.SetBool(
-                ROTATION_GUARD_KEY,
-                false
-            );
-
-            slot.Itemstack.TempAttributes.RemoveAttribute(
-                ROTATION_ANGLE
-            );
-
-            slot.Itemstack.TempAttributes.RemoveAttribute(
-                "allclassesrebalanced_particle_time"
-            );
+            ResetInteractionState(slot.Itemstack);
         }
 
         if (secondsUsed < USE_TIME)
@@ -392,6 +187,14 @@ public class ItemSummonerGear : Item
             return;
         }
 
+        TrySummonAtTarget(slot, byEntity, blockSel);
+    }
+
+    private void TrySummonAtTarget(
+        ItemSlot slot,
+        EntityAgent byEntity,
+        BlockSelection blockSel)
+    {
         if (slot?.Itemstack == null)
         {
             api.Logger.Warning(
@@ -435,6 +238,82 @@ public class ItemSummonerGear : Item
         }
     }
 
+    private static float GetUseProgress(float secondsUsed)
+    {
+        return GameMath.Clamp(
+            secondsUsed / USE_TIME,
+            0f,
+            1f
+        );
+    }
+
+    private static void ResetInteractionState(ItemStack itemstack)
+    {
+        itemstack.TempAttributes.SetBool(
+            ROTATION_GUARD_KEY,
+            false
+        );
+
+        itemstack.TempAttributes.RemoveAttribute(ROTATION_ANGLE);
+        itemstack.TempAttributes.RemoveAttribute(PARTICLE_TIME_KEY);
+    }
+
+    private static void SetRotationState(ItemStack itemstack, float angle)
+    {
+        itemstack.TempAttributes.SetBool(
+            ROTATION_GUARD_KEY,
+            true
+        );
+
+        itemstack.TempAttributes.SetFloat(
+            ROTATION_ANGLE,
+            angle
+        );
+    }
+
+    private static void UpdateRotation(ItemStack itemstack, float secondsUsed)
+    {
+        float angle =
+            ROTATION_MIN_SPEED * secondsUsed +
+            0.5f * (ROTATION_MAX_SPEED - ROTATION_MIN_SPEED)
+            * secondsUsed * secondsUsed;
+
+        SetRotationState(itemstack, angle % 360f);
+    }
+
+    private void SpawnParticlesAtInterval(
+        float secondsUsed,
+        ItemSlot slot,
+        BlockSelection blockSel,
+        EntityAgent byEntity)
+    {
+        if (slot.Itemstack == null)
+        {
+            return;
+        }
+
+        float currentInterval =
+            (float)Math.Floor(
+                secondsUsed / PARTICLE_INTERVAL
+            ) * PARTICLE_INTERVAL;
+
+        float lastInterval = slot.Itemstack.TempAttributes.GetFloat(
+            PARTICLE_TIME_KEY
+        );
+
+        if (currentInterval <= lastInterval)
+        {
+            return;
+        }
+
+        slot.Itemstack.TempAttributes.SetFloat(
+            PARTICLE_TIME_KEY,
+            currentInterval
+        );
+
+        SpawnTargetParticles(blockSel, byEntity);
+    }
+
     private void SpawnEntitiesAtTarget(
         BlockSelection blockSel,
         EntityAgent byEntity,
@@ -450,15 +329,15 @@ public class ItemSummonerGear : Item
             return;
         }
 
-        List<SpawnEntry>? entries =
-            GetSpawnEntries(itemstack);
+        List<SummonSpawnEntry>? entries =
+            JsonHelper.GetSpawnEntries(itemstack, spawningByType);
 
         if (entries == null || entries.Count == 0)
         {
             return;
         }
 
-        SpawnEntry selectedEntry =
+        SummonSpawnEntry selectedEntry =
             entries[
                 byEntity.World.Rand.Next(entries.Count)
             ];
@@ -609,7 +488,7 @@ public class ItemSummonerGear : Item
         SimpleParticleProperties particles =
             new SimpleParticleProperties(
                 1,
-                2,
+                PARTICLE_QUANTITY,
                 ColorUtil.ToRgba(
                     150,
                     183,
@@ -631,14 +510,14 @@ public class ItemSummonerGear : Item
                 1.5f,
                 0.0f,
                 0.15f,
-                0.4f,
+                PARTICLE_SCALE,
                 EnumParticleModel.Quad
             );
 
         particles.AddPos.Set(
-            0.12,
+            PARTICLE_RADIUS,
             0.05,
-            0.12
+            PARTICLE_RADIUS
         );
 
         particles.RandomVelocityChange = true;
