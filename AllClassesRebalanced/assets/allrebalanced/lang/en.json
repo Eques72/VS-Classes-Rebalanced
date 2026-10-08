@@ -1,2 +1,12 @@
 {
+    "allrebalanced:item-summoner-gear-normal":"Simple Rift Gear",
+    "allrebalanced:item-summoner-gear-bell":"Bell Rift Gear",
+    "allrebalanced:item-summoner-gear-mutant":"Mutated Rift Gear",
+    "allrebalanced:item-summoner-gear-tainted":"Tainted Rift Gear",
+    "allrebalanced:item-summoner-gear-nightmare":"Corrupted Rift Gear",
+    "allrebalanced:itemdesc-summoner-gear-normal":"Can be shattered to summon Surface or Deep Rust creatures.\n\n<font color=\"#99c9f9\"><i>Crude contraption created by a maniac too eager to look into another world.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-bell":"Can be shattered in attempt to summon Bells.\n\n<font color=\"#99c9f9\"><i>Unplesant quitet ringing near your ear can be heard whenever you hold it.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-mutant":"Can be shattered to summon Double Headed Rust creatures.\n\n<font color=\"#99c9f9\"><i>LORE.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-tainted":"Can be shattered to summon Tainted or Corrupt Rust creatures.\n\n<font color=\"#99c9f9\"><i>LORE.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-nightmare":"Can be shattered to summon Nightmare or Corrupt Rust creatures.\n\n<font color=\"#99c9f9\"><i>LORE.</i></font>"
 }

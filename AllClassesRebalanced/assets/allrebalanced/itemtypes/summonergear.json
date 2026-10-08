@@ -7,10 +7,10 @@
 			"code": "type",
 			"states": [
 				"normal",
-				"bell",
-				"mutant",
 				"tainted",
-				"nightmare"
+				"nightmare",
+				"mutant",
+				"bell"
 			]
 		}
 	],
