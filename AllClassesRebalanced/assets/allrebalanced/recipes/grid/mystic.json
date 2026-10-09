@@ -117,7 +117,7 @@
             },
             "N": {
                 "type": "item",
-                "code": "game:metalnailsandstrips-bismuthbronze",
+                "code": "game:metalnailsandstrips-*",
                 "quantity": 1
             },
             "S": {
@@ -141,7 +141,7 @@
         }
     },
     {
-        "ingredientPattern": "W_W,_G_,ISI",
+        "ingredientPattern": "W__,WG_,ISI",
         "recipeGroup": 1,
         "requiresTrait": "transcription",
         "ingredients": {
