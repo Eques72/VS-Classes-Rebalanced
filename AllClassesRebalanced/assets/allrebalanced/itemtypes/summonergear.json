@@ -22,8 +22,12 @@
 			"*"
 		]
 	},
-	"shape": {
-		"base": "game:item/gear-rusty"
+	"shapebytype": {
+		"*-normal": { "base": "allrebalanced:item/summon_gear_normal"},
+		"*-tainted": { "base": "allrebalanced:item/summon_gear_tainted"},
+		"*-nightmare": { "base": "allrebalanced:item/summon_gear_nightmare"},
+		"*-mutant": { "base": "allrebalanced:item/summon_gear_mutant"},
+		"*-bell": { "base": "allrebalanced:item/summon_gear_bell"}
 	},
 	"attributes": {
 		"displaycaseable": true,
@@ -144,18 +148,18 @@
 		"translation": {
 			"x": -0.65,
 			"y": -0.1085,
-			"z": -0.78
+			"z": -0.7
 		},
 		"rotation": {
 			"x": 0,
-			"y": -89,
-			"z": 5
+			"y": -90,
+			"z": 0
 		},
 		"origin": {
 			"x": 0.34375,
 			"y": 0.0375,
 			"z": 0.4375
 		},
-		"scale": 0.61
+		"scale": 0.7
 	}
 }

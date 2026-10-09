@@ -33,8 +33,8 @@ public class ItemSummonerGear : Item
     private const float PARTICLE_INTERVAL = 0.15f;
 
     private const float PARTICLE_RADIUS = 0.12f;
-    private const int PARTICLE_QUANTITY = 2;
-    private const float PARTICLE_SCALE = 0.4f;
+    private const int PARTICLE_QUANTITY = 4;
+    private const float PARTICLE_SCALE = 0.3f;
 
     private const float CAMERA_SHAKE_MIN = 0.015f;
     private const float CAMERA_SHAKE_MAX = 0.04f;
@@ -74,11 +74,11 @@ public class ItemSummonerGear : Item
             return;
         }
 
-        // Trait restriction currently disabled intentionally WIP
-        if (!TraitHelper.HasTrait(player, TraitHelper.SummonerTrait) && 1 == 2)
-        {
-            return;
-        }
+        // Temporarely disabled, waits for config implementation
+        // if (!TraitHelper.HasTrait(player, TraitHelper.SummonerTrait) && 1 == 2)
+        // {
+        //     return;
+        // }
 
         ResetInteractionState(slot.Itemstack);
         slot.Itemstack.TempAttributes.RemoveAttribute(REWARD_GUARD_KEY);
@@ -487,10 +487,10 @@ public class ItemSummonerGear : Item
 
         SimpleParticleProperties particles =
             new SimpleParticleProperties(
-                1,
+                2,
                 PARTICLE_QUANTITY,
                 ColorUtil.ToRgba(
-                    150,
+                    120,
                     183,
                     65,
                     14
@@ -498,18 +498,18 @@ public class ItemSummonerGear : Item
                 pos,
                 pos,
                 new Vec3f(
-                    -0.03f,
-                    0.05f,
-                    -0.03f
+                    -0.25f,
+                    0.02f,
+                    -0.25f
                 ),
                 new Vec3f(
-                    0.03f,
-                    0.18f,
-                    0.03f
+                    0.25f,
+                    0.06f,
+                    0.25f
                 ),
-                1.5f,
+                1.8f,
                 0.0f,
-                0.15f,
+                0.10f,
                 PARTICLE_SCALE,
                 EnumParticleModel.Quad
             );

@@ -17,6 +17,7 @@
 *.zip
 *.code-workspace
 AllClassesRebalanced/compare/*
+AllClassesRebalanced/resources/*
 AGENTS.md
 runVS.sh
 
