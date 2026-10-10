@@ -1,0 +1,68 @@
+[
+    {
+        "op": "add",
+        "file": "allrebalanced:recipes/grid/mystic.json",
+        "path": "/0/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "riftsummoner"
+            }
+        ]
+    },
+    {
+        "op": "add",
+        "file": "allrebalanced:recipes/grid/mystic.json",
+        "path": "/1/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "riftsummoner"
+            }
+        ]
+    },
+    {
+        "op": "add",
+        "file": "allrebalanced:recipes/grid/mystic.json",
+        "path": "/2/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "riftsummoner"
+            }
+        ]
+    },
+    {
+        "op": "add",
+        "file": "allrebalanced:recipes/grid/mystic.json",
+        "path": "/3/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "riftsummoner"
+            }
+        ]
+    },
+    {
+        "op": "add",
+        "file": "allrebalanced:recipes/grid/mystic.json",
+        "path": "/4/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "riftsummoner"
+            }
+        ]
+    },
+    {
+        "op": "add",
+        "file": "allrebalanced:itemtypes/summonergear.json",
+        "path": "/enabled",
+        "value": false,
+        "dependsOn": [
+            {
+                "modid": "riftsummoner"
+            }
+        ]
+    }
+]
