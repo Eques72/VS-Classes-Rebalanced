@@ -4,7 +4,7 @@
   "name": "Eques All Classes",
   "description" : "An AllClasses patch focused on new and old classes, class identity, new recipes, traits balance and better cooperation between players.",
   "authors": ["Eques72"],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "side": "Universal",
   "requiredonclient": true,
   "requiredonserver": true,
