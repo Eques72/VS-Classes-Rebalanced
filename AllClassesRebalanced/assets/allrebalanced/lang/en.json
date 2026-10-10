@@ -4,9 +4,9 @@
     "allrebalanced:item-summoner-gear-mutant":"Mutated Rift Gear",
     "allrebalanced:item-summoner-gear-tainted":"Tainted Rift Gear",
     "allrebalanced:item-summoner-gear-nightmare":"Corrupted Rift Gear",
-    "allrebalanced:itemdesc-summoner-gear-normal":"Can be shattered to summon Surface or Deep Rust creatures.\n\n<font color=\"#99c9f9\"><i>Crude contraption created by a maniac too eager to look into another world.</i></font>",
-    "allrebalanced:itemdesc-summoner-gear-bell":"Can be shattered in attempt to summon Bells.\n\n<font color=\"#99c9f9\"><i>Unplesant quitet ringing near your ear can be heard whenever you hold it.</i></font>",
-    "allrebalanced:itemdesc-summoner-gear-mutant":"Can be shattered to summon Double Headed Rust creatures.\n\n<font color=\"#99c9f9\"><i>LORE.</i></font>",
-    "allrebalanced:itemdesc-summoner-gear-tainted":"Can be shattered to summon Tainted or Corrupt Rust creatures.\n\n<font color=\"#99c9f9\"><i>LORE.</i></font>",
-    "allrebalanced:itemdesc-summoner-gear-nightmare":"Can be shattered to summon Nightmare or Corrupt Rust creatures.\n\n<font color=\"#99c9f9\"><i>LORE.</i></font>"
+    "allrebalanced:itemdesc-summoner-gear-normal":"Can be shattered to summon Surface or Deep Rust creatures.\n\n<font color=\"#99c9f9\"><i>A crude contraption, wrought by a madman whose curiosity about the other world outpaced his caution.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-bell":"Can be shattered in attempt to summon Bells.\n\n<font color=\"#99c9f9\"><i>Distant peal haunts the ear whenever this accursed thing is held. No bell swings, yet still it tolls.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-mutant":"Can be shattered to summon Double Headed and other high level Rust creatures.\n\n<font color=\"#99c9f9\"><i>People turn away their gaze in disgust. Some truths offend the eye. But You know better than them.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-tainted":"Can be shattered to summon Tainted or Corrupt Rust creatures.\n\n<font color=\"#99c9f9\"><i>Made by the meddling hands of a mage's apprentice, infused with but a sliver of temporal energy.</i></font>",
+    "allrebalanced:itemdesc-summoner-gear-nightmare":"Can be shattered to summon Nightmare or Corrupt Rust creatures.\n\n<font color=\"#99c9f9\"><i>Rust and rot slough from the thing. Something pitiful is waiting on the other side.</i></font>"
 }
