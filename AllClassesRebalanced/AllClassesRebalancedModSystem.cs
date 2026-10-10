@@ -18,6 +18,14 @@ public class AllClassesRebalancedModSystem : ModSystem
     {
         Logger = api.Logger;
         new Harmony("allrebalanced").PatchAll();
+
+        if (!api.ModLoader.IsModEnabled("riftsummoner"))
+        {
+            api.RegisterItemClass(
+                "summonergear",
+                typeof(ItemSummonerGear)
+            );
+        }
     }
 
     public override void StartServerSide(ICoreServerAPI api)
