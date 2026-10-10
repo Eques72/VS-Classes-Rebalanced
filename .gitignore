@@ -19,7 +19,6 @@
 AllClassesRebalanced/compare/*
 AllClassesRebalanced/resources/*
 AGENTS.md
-runVS.sh
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
