@@ -3,6 +3,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using Vintagestory.GameContent;
 using System;
 using System.Collections.Generic;
 
@@ -20,6 +21,7 @@ public class ItemSummonerGear : Item
         public string Entity { get; set; } = "";
         public int Min { get; set; }
         public int Max { get; set; }
+        public float Temp_Loss {get; set;} = 0.0f;
     }
 
     private Dictionary<string, List<SummonSpawnEntry>>? spawningByType;
@@ -423,6 +425,10 @@ public class ItemSummonerGear : Item
 
             byEntity.World.SpawnEntity(entity);
         }
+
+        var temporalBehavior = byEntity.GetBehavior<EntityBehaviorTemporalStabilityAffected>();
+        if(temporalBehavior != null)
+            temporalBehavior.OwnStability = temporalBehavior.OwnStability - selectedEntry.Temp_Loss;
     }
 
     public override void OnBeforeRender(

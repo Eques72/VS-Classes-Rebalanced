@@ -108,7 +108,8 @@ public class JsonHelper
             {
                 Entity = entity,
                 Min = entry["min"].AsInt(1),
-                Max = entry["max"].AsInt(1)
+                Max = entry["max"].AsInt(1),
+                Temp_Loss = entry["temp_loss"].AsFloat(0.0f)
             });
         }
 

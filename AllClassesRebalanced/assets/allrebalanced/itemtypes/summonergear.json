@@ -79,49 +79,174 @@
 				"type": "*-normal",
 				"entity": "game:drifter-normal",
 				"min": 3,
-				"max": 5
+				"max": 5,
+				"temp_loss": 0.03
 			},
 			{
 				"type": "*-normal",
 				"entity": "game:drifter-deep",
-				"min": 1,
-				"max": 3
+				"min": 2,
+				"max": 4,
+				"temp_loss": 0.03
+
 			},
+			{
+				"type": "*-normal",
+				"entity": "game:bowtorn-surface",
+				"min": 3,
+				"max": 5,
+				"temp_loss": 0.03
+			},
+			{
+				"type": "*-normal",
+				"entity": "game:bowtorn-deep",
+				"min": 2,
+				"max": 4,
+				"temp_loss": 0.03
+			},
+			{
+				"type": "*-normal",
+				"entity": "game:shiver-surface",
+				"min": 2,
+				"max": 4,
+				"temp_loss": 0.03
+			},
+			{
+				"type": "*-normal",
+				"entity": "game:shiver-deep",
+				"min": 2,
+				"max": 3,
+				"temp_loss": 0.03
+			},
+
 			{
 				"type": "*-tainted",
 				"entity": "game:drifter-tainted",
-				"min": 2,
-				"max": 4
+				"min": 3,
+				"max": 4,
+				"temp_loss": 0.08
 			},
 			{
 				"type": "*-tainted",
 				"entity": "game:drifter-corrupt",
-				"min": 1,
-				"max": 3
+				"min": 2,
+				"max": 3,
+				"temp_loss": 0.08
 			},
+			{
+				"type": "*-tainted",
+				"entity": "game:bowtorn-tainted",
+				"min": 3,
+				"max": 4,
+				"temp_loss": 0.08
+			},
+			{
+				"type": "*-tainted",
+				"entity": "game:bowtorn-corrupt",
+				"min": 2,
+				"max": 3,
+				"temp_loss": 0.08
+			},
+			{
+				"type": "*-tainted",
+				"entity": "game:shiver-tainted",
+				"min": 3,
+				"max": 3,
+				"temp_loss": 0.08
+			},
+			{
+				"type": "*-tainted",
+				"entity": "game:shiver-corrupt",
+				"min": 2,
+				"max": 2,
+				"temp_loss": 0.08
+			},
+
 			{
 				"type": "*-nightmare",
 				"entity": "game:drifter-nightmare",
 				"min": 1,
-				"max": 3
+				"max": 3,
+				"temp_loss": 0.13
 			},
 			{
 				"type": "*-nightmare",
 				"entity": "game:drifter-corrupt",
 				"min": 3,
-				"max": 5
+				"max": 5,
+				"temp_loss": 0.13
 			},
+			{
+				"type": "*-nightmare",
+				"entity": "game:bowtorn-nightmare",
+				"min": 1,
+				"max": 3,
+				"temp_loss": 0.13
+			},
+			{
+				"type": "*-nightmare",
+				"entity": "game:bowtorn-corrupt",
+				"min": 3,
+				"max": 5,
+				"temp_loss": 0.13
+			},
+			{
+				"type": "*-nightmare",
+				"entity": "game:shiver-nightmare",
+				"min": 1,
+				"max": 4,
+				"temp_loss": 0.13
+			},
+			{
+				"type": "*-nightmare",
+				"entity": "game:shiver-stilt",
+				"min": 1,
+				"max": 2,
+				"temp_loss": 0.13
+			},
+
 			{
 				"type": "*-mutant",
 				"entity": "game:drifter-double-headed",
 				"min": 1,
-				"max": 3
+				"max": 3,
+				"temp_loss": 0.18
+			},
+			{
+				"type": "*-mutant",
+				"entity": "game:bowtorn-gearfoot",
+				"min": 1,
+				"max": 3,
+				"temp_loss": 0.18
+			},
+			{
+				"type": "*-mutant",
+				"entity": "game:shiver-bellhead",
+				"min": 1,
+				"max": 3,
+				"temp_loss": 0.18
+			},
+			{
+				"type": "*-mutant",
+				"entity": "game:shiver-deepsplit",
+				"min": 1,
+				"max": 2,
+				"temp_loss": 0.18
+			},
+
+			{
+				"type": "*-bell",
+				"entity": "game:bell-normal",
+				"min": 0,
+				"max": 0,
+				"temp_loss": 0.25
 			},
 			{
 				"type": "*-bell",
 				"entity": "game:bell-normal",
 				"min": 0,
-				"max": 1
+				"max": 1,
+				"temp_loss": 0.25
 			}
 		]
 	},
@@ -146,9 +271,9 @@
 	},
 	"tpHandTransform": {
 		"translation": {
-			"x": -0.65,
-			"y": -0.1085,
-			"z": -0.7
+			"x": -0.615,
+			"y": -0.109,
+			"z": -0.6
 		},
 		"rotation": {
 			"x": 0,
@@ -160,6 +285,6 @@
 			"y": 0.0375,
 			"z": 0.4375
 		},
-		"scale": 0.7
+		"scale": 0.65
 	}
 }
